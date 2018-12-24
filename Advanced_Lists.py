@@ -64,3 +64,19 @@ ValueError                                Traceback (most recent call last)
 ----> 1 l.index(12)
 
 ValueError: 12 is not in list
+
+
+insert
+insert takes in two arguments: insert(index,object) This method places the object at the index supplied. For example:
+
+In [12]:
+l
+Out[12]:
+[1, 2, 3, 4]
+In [13]:
+# Place a letter at the index 2
+l.insert(2,'inserted')
+In [14]:
+l
+Out[14]:
+[1, 2, 'inserted', 3, 4]
