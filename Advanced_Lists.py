@@ -131,3 +131,18 @@ In [25]:
 l
 Out[25]:
 [3, 4, 2, 1]
+
+
+sort
+sort will sort your list in place:
+
+In [26]:
+l
+Out[26]:
+[3, 4, 2, 1]
+In [27]:
+l.sort()
+In [28]:
+l
+Out[28]:
+[1, 2, 3, 4]
