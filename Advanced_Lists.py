@@ -80,3 +80,19 @@ In [14]:
 l
 Out[14]:
 [1, 2, 'inserted', 3, 4]
+
+
+
+pop
+You most likely have already seen pop(), which allows us to "pop" off the last element of a list.
+
+In [15]:
+ele = l.pop()
+In [16]:
+l
+Out[16]:
+[1, 2, 'inserted', 3]
+In [17]:
+ele
+Out[17]:
+4
