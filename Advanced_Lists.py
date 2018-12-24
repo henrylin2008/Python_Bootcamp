@@ -146,3 +146,6 @@ In [28]:
 l
 Out[28]:
 [1, 2, 3, 4]
+
+
+#show difference
