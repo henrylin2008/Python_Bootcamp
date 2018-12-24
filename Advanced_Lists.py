@@ -120,3 +120,14 @@ In [23]:
 l
 Out[23]:
 [1, 2, 4, 3]
+
+
+reverse
+As you might have guessed, reverse() reverses a list. Note this occurs in place! Meaning it effects your list permanently.
+
+In [24]:
+l.reverse()
+In [25]:
+l
+Out[25]:
+[3, 4, 2, 1]
