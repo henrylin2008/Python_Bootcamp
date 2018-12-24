@@ -96,3 +96,27 @@ In [17]:
 ele
 Out[17]:
 4
+
+
+
+remove
+The remove() method removes the first occurrence of a value. For example:
+
+In [18]:
+l
+Out[18]:
+[1, 2, 'inserted', 3]
+In [19]:
+l.remove('inserted')
+In [20]:
+l
+Out[20]:
+[1, 2, 3]
+In [21]:
+l = [1,2,3,4,3]
+In [22]:
+l.remove(3)
+In [23]:
+l
+Out[23]:
+[1, 2, 4, 3]
