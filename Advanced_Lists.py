@@ -49,3 +49,18 @@ print x
 [1, 2, 3, 4, 5]
 Note how extend append each element in that iterable. That is the key difference.
 
+index
+index will return the index of whatever element is placed as an argument. Note: If the the element is not in the list an error is returned.
+
+In [10]:
+l.index(2)
+Out[10]:
+1
+In [11]:
+l.index(12)
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-11-3f090052d656> in <module>()
+----> 1 l.index(12)
+
+ValueError: 12 is not in list
