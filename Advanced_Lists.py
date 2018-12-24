@@ -13,3 +13,17 @@ l.append(4)
 l
 Out[2]:
 [1, 2, 3, 4]
+
+
+
+count
+We discussed this during the methods lectures, but here it is again. count() takes in an element and returns the number of times it occures in your list:
+
+In [4]:
+l.count(10)
+Out[4]:
+0
+In [5]:
+l.count(2)
+Out[5]:
+1
