@@ -62,3 +62,15 @@ In [17]:
 {x:x**3 for x in range(5)}
 Out[17]:
 {0: 0, 1: 1, 2: 8, 3: 27, 4: 64}
+
+Advanced Lists
+Problem 8: Reverse the list below:
+
+In [22]:
+l = [1,2,3,4]
+
+l.reverse()
+
+l
+Out[22]:
+[4, 3, 2, 1]
