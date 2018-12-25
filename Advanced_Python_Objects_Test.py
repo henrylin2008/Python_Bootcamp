@@ -23,3 +23,12 @@ s = 'hello how are you Mary, are you feeling okay?'
 s.islower()
 Out[7]:
 False
+
+
+Problem 4: How many times does the letter 'w' show up in the string below?
+
+In [8]:
+s = 'twywywtwywbwhsjhwuwshshwuwwwjdjdid'
+s.count('w')
+Out[8]:
+12
