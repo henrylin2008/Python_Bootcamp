@@ -53,3 +53,12 @@ In [16]:
 set1.union(set2)
 Out[16]:
 {1, 2, 3, 5, 6, 7, 8}
+
+
+Advanced Dictionaries
+Problem 7: Create this dictionary: {0: 0, 1: 1, 2: 8, 3: 27, 4: 64} using dictionary comprehension.
+
+In [17]:
+{x:x**3 for x in range(5)}
+Out[17]:
+{0: 0, 1: 1, 2: 8, 3: 27, 4: 64}
