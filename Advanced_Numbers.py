@@ -35,3 +35,17 @@ In [8]:
 pow(2,4)
 Out[8]:
 16
+
+
+
+abs
+Absolute Value
+
+In [9]:
+abs(-3)
+Out[9]:
+3
+In [10]:
+abs(3)
+Out[10]:
+3
