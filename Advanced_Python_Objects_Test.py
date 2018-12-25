@@ -74,3 +74,15 @@ l.reverse()
 l
 Out[22]:
 [4, 3, 2, 1]
+
+
+Problem 9: Sort the list below
+
+In [24]:
+l = [3,4,2,5,1]
+
+l.sort()
+
+l
+Out[24]:
+[1, 2, 3, 4, 5]
