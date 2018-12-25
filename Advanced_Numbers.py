@@ -49,3 +49,16 @@ In [10]:
 abs(3)
 Out[10]:
 3
+
+round
+Round a number to a given precision in decimal digits (default 0 digits). This always returns a floating point number.
+
+In [11]:
+round(3)
+Out[11]:
+3.0
+In [13]:
+round(3.1415926535,2)
+Out[13]:
+3.14
+Python has a built-in math library that is also useful to play around with in case you are ever in need of some mathematical operations. Explore the documentation here!
