@@ -26,3 +26,12 @@ In [16]:
 bin(512)
 Out[16]:
 '0b1000000000'
+
+
+pow()
+With two arguments, equivalent to x^y. With three arguments, equivalent to (x^y) % z, but may be more efficient (e.g. for longs).
+
+In [8]:
+pow(2,4)
+Out[8]:
+16
