@@ -44,3 +44,12 @@ set2 = {3,1,7,5,6,8}
 set1.difference(set2)
 Out[12]:
 {2}
+
+
+
+Problem 6: Find all elements that are in either set:
+
+In [16]:
+set1.union(set2)
+Out[16]:
+{1, 2, 3, 5, 6, 7, 8}
