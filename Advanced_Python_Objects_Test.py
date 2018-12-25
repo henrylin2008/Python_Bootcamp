@@ -32,3 +32,15 @@ s = 'twywywtwywbwhsjhwuwshshwuwwwjdjdid'
 s.count('w')
 Out[8]:
 12
+
+
+Advanced Sets
+Problem 5: Find the elements in set1 that are not in set2:
+
+In [12]:
+set1 = {2,3,1,5,6,8}
+set2 = {3,1,7,5,6,8}
+
+set1.difference(set2)
+Out[12]:
+{2}
