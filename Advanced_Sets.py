@@ -175,3 +175,12 @@ In [60]:
 s1.symmetric_difference(s2)
 Out[60]:
 {4}
+
+
+union
+Returns the union of two sets (i.e. all elements that are in either set.)
+
+In [62]:
+s1.union(s2)
+Out[62]:
+{1, 2, 4}
