@@ -77,3 +77,17 @@ In [22]:
 s1
 Out[22]:
 {2, 3}
+
+discard
+Removes an element from a set if it is a member.If the element is not a member, do nothing.
+
+In [23]:
+s
+Out[23]:
+{1, 2, 3}
+In [25]:
+s.discard(2)
+In [26]:
+s
+Out[26]:
+{1, 3}
