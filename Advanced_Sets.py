@@ -91,3 +91,28 @@ In [26]:
 s
 Out[26]:
 {1, 3}
+
+
+intersection and intersection_update
+Returns the intersection of two or more sets as a new set.(i.e. elements that are common to all of the sets.)
+
+In [34]:
+s1 = {1,2,3}
+In [35]:
+s2 = {1,2,4}
+In [36]:
+s1.intersection(s2)
+Out[36]:
+{1, 2}
+In [37]:
+s1
+Out[37]:
+{1, 2, 3}
+intersection_update will update a set with the intersection of itself and another.
+
+In [38]:
+s1.intersection_update(s2)
+In [39]:
+s1
+Out[39]:
+{1, 2}
