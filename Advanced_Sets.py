@@ -60,3 +60,20 @@ In [17]:
 s.difference(sc)
 Out[17]:
 {4}
+
+difference_update
+difference_update syntax is:
+
+set1.difference_update(set2)
+the method returns set1 after removing elements found in set2
+
+In [19]:
+s1 = {1,2,3}
+In [20]:
+s2 = {1,4,5}
+In [21]:
+s1.difference_update(s2)
+In [22]:
+s1
+Out[22]:
+{2, 3}
