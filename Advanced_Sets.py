@@ -13,3 +13,13 @@ In [5]:
 s
 Out[5]:
 {1, 2}
+
+clear
+removes all elements from the set
+
+In [6]:
+s.clear()
+In [7]:
+s
+Out[7]:
+set()
