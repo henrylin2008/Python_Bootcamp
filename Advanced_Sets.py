@@ -23,3 +23,28 @@ In [7]:
 s
 Out[7]:
 set()
+
+copy
+returns a copy of the set. Note it is a copy, so changes to the original don't effect the copy.
+
+In [10]:
+s = {1,2,3}
+sc = s.copy()
+In [11]:
+sc
+Out[11]:
+{1, 2, 3}
+In [12]:
+s
+Out[12]:
+{1, 2, 3}
+In [13]:
+s.add(4)
+In [14]:
+s
+Out[14]:
+{1, 2, 3, 4}
+In [15]:
+sc
+Out[15]:
+{1, 2, 3}
