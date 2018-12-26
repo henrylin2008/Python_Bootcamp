@@ -48,3 +48,15 @@ In [15]:
 sc
 Out[15]:
 {1, 2, 3}
+
+
+difference
+difference returns the difference of two or more sets. The syntax is:
+
+set1.difference(set2)
+For example:
+
+In [17]:
+s.difference(sc)
+Out[17]:
+{4}
