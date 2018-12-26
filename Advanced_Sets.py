@@ -133,3 +133,20 @@ In [51]:
 s1.isdisjoint(s3)
 Out[51]:
 True
+
+
+issubset
+This method reports whether another set contains this set.
+
+In [53]:
+s1
+Out[53]:
+{1, 2}
+In [54]:
+s2
+Out[54]:
+{1, 2, 4}
+In [55]:
+s1.issubset(s2)
+Out[55]:
+True
