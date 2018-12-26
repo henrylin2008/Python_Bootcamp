@@ -184,3 +184,14 @@ In [62]:
 s1.union(s2)
 Out[62]:
 {1, 2, 4}
+
+
+update
+Update a set with the union of itself and others.
+
+In [63]:
+s1.update(s2)
+In [64]:
+s1
+Out[64]:
+{1, 2, 4}
