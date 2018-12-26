@@ -150,3 +150,11 @@ In [55]:
 s1.issubset(s2)
 Out[55]:
 True
+
+issuperset
+This method will report whether this set contains another set.
+
+In [56]:
+s2.issuperset(s1)
+Out[56]:
+True
