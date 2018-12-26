@@ -158,3 +158,20 @@ In [56]:
 s2.issuperset(s1)
 Out[56]:
 True
+
+
+symmetric_difference and symmetric_update
+Return the symmetric difference of two sets as a new set.(i.e. all elements that are in exactly one of the sets.)
+
+In [58]:
+s1
+Out[58]:
+{1, 2}
+In [59]:
+s2
+Out[59]:
+{1, 2, 4}
+In [60]:
+s1.symmetric_difference(s2)
+Out[60]:
+{4}
