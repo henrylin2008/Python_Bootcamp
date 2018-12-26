@@ -116,3 +116,20 @@ In [39]:
 s1
 Out[39]:
 {1, 2}
+
+
+isdisjoint
+This method will return True if two sets have a null intersection.
+
+In [49]:
+s1 = {1,2}
+s2 = {1,2,4}
+s3 = {5}
+In [50]:
+s1.isdisjoint(s2)
+Out[50]:
+False
+In [51]:
+s1.isdisjoint(s3)
+Out[51]:
+True
