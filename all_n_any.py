@@ -13,3 +13,13 @@ def any(iterable):
         if element:
             return True
     return False
+
+
+Let's see a few examples of these functions. They should be fairly straightforward:
+
+In [4]:
+lst = [True,True,False,True]
+In [5]:
+all(lst)
+Out[5]:
+False
