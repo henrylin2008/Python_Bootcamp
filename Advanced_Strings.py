@@ -81,3 +81,22 @@ In [45]:
 s.isspace()
 Out[45]:
 False
+
+istitle() will return True if S is a title cased string and there is at least one character in S, i.e. uppercase characters may only follow uncased characters and lowercase characters only cased ones. Return False otherwise.
+
+In [47]:
+s.istitle()
+Out[47]:
+False
+isupper() will return True if all cased characters in S are uppercase and there is at least one cased character in S, False otherwise.
+
+In [35]:
+s.isupper()
+Out[35]:
+False
+Another method is endswith() which is essentially the same as a boolean check on s[-1]
+
+In [69]:
+s.endswith('o')
+Out[69]:
+True
