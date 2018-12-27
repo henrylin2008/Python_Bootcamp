@@ -20,3 +20,15 @@ In [78]:
 s.lower()
 Out[78]:
 'hello world'
+
+
+
+Location and Counting
+In [80]:
+s.count('o')
+Out[80]:
+2
+In [81]:
+s.find('o')
+Out[81]:
+4
