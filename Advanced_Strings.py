@@ -100,3 +100,16 @@ In [69]:
 s.endswith('o')
 Out[69]:
 True
+
+
+Built-in Reg. Expressions
+Strings have some built-in methods that can resemble regular expression operations. We can use split() to split the string at a certain element and return a list of the result. We can use partition to return a tuple that includes the separator (the first occurrence) and the first half and the end half.
+
+In [52]:
+s.split('e')
+Out[52]:
+['h', 'llo']
+In [72]:
+s.partition('e')
+Out[72]:
+('h', 'e', 'llo')
