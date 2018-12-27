@@ -23,3 +23,15 @@ In [5]:
 all(lst)
 Out[5]:
 False
+
+
+
+Returns False because not all elements are True.
+
+In [6]:
+any(lst)
+Out[6]:
+True
+Returns True because at least one of the elements in the list is True
+
+There you have it, you should have an understanding of how to use any() and all() in your code.
