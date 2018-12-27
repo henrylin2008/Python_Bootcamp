@@ -48,3 +48,23 @@ In [84]:
 'hello\thi'.expandtabs()
 Out[84]:
 'hello   hi'
+
+
+
+is check methods
+These various methods below check it the string is some case. Lets explore them:
+
+In [40]:
+s = 'hello'
+isalnum() will return True if all characters in S are alphanumeric
+
+In [41]:
+s.isalnum()
+Out[41]:
+True
+isalpha() wil return True if all characters in S are alphabetic
+
+In [43]:
+s.isalpha()
+Out[43]:
+True
