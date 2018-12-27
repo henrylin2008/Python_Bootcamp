@@ -68,3 +68,16 @@ In [43]:
 s.isalpha()
 Out[43]:
 True
+
+islower() will return True if all cased characters in S are lowercase and there is at least one cased character in S, False otherwise.
+
+In [44]:
+s.islower()
+Out[44]:
+True
+isspace() will return True if all characters in S are whitespace.
+
+In [45]:
+s.isspace()
+Out[45]:
+False
