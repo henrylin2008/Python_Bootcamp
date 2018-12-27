@@ -32,3 +32,19 @@ In [81]:
 s.find('o')
 Out[81]:
 4
+
+
+
+Formatting
+The center() method allows you to place your string 'centered' between a provided string with a certain length. Personally, I've never actually used this in code as it seems pretty esoteric...
+
+In [83]:
+s.center(20,'z')
+Out[83]:
+'zzzzhello worldzzzzz'
+expandtabs() will expand tab notations \t into spaces:
+
+In [84]:
+'hello\thi'.expandtabs()
+Out[84]:
+'hello   hi'
