@@ -113,3 +113,9 @@ In [72]:
 s.partition('e')
 Out[72]:
 ('h', 'e', 'llo')
+
+
+In [58]:
+s
+Out[58]:
+'hello'
