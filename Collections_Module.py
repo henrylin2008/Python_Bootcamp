@@ -92,3 +92,49 @@ In [28]:
 d['one']
 Out[28]:
 0
+
+OrderedDict
+An OrderedDict is a dictionary subclass that remembers the order in which its contents are added.
+
+Fro example a normal dictionary:
+
+In [32]:
+print 'Normal dictionary:'
+
+d = {}
+
+d['a'] = 'A'
+d['b'] = 'B'
+d['c'] = 'C'
+d['d'] = 'D'
+d['e'] = 'E'
+
+for k, v in d.items():
+    print k, v
+Normal dictionary:
+a A
+c C
+b B
+e E
+d D
+An Ordered Dictionary:
+
+In [33]:
+print 'OrderedDict:'
+
+d = collections.OrderedDict()
+
+d['a'] = 'A'
+d['b'] = 'B'
+d['c'] = 'C'
+d['d'] = 'D'
+d['e'] = 'E'
+
+for k, v in d.items():
+    print k, v
+OrderedDict:
+a A
+b B
+c C
+d D
+e E
