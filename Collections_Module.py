@@ -138,3 +138,41 @@ b B
 c C
 d D
 e E
+
+Equality with an Ordered Dictionary
+A regular dict looks at its contents when testing for equality. An OrderedDict also considers the order the items were added.
+
+A normal Dictionary:
+
+In [36]:
+print 'Dictionaries are equal? '
+
+d1 = {}
+d1['a'] = 'A'
+d1['b'] = 'B'
+
+d2 = {}
+d2['b'] = 'B'
+d2['a'] = 'A'
+
+print d1 == d2
+Dictionaries are equal? 
+True
+An Ordered Dictionary:
+
+In [37]:
+print 'Dictionaries are equal? '
+
+d1 = collections.OrderedDict()
+d1['a'] = 'A'
+d1['b'] = 'B'
+
+
+d2 = collections.OrderedDict()
+
+d2['b'] = 'B'
+d2['a'] = 'A'
+
+print d1 == d2
+Dictionaries are equal? 
+False
