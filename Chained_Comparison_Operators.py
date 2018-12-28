@@ -29,3 +29,10 @@ In [4]:
 1<3 and 3>2
 Out[4]:
 True
+
+Its important to note that Python is checking both instances of the comparisons. We can also use or to write comparisons in Python. For example:
+
+In [5]:
+1==2 or 2<3
+Out[5]:
+True
