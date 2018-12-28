@@ -8,3 +8,10 @@ In [1]:
 1 < 2 < 3
 Out[1]:
 True
+
+The above statement check if 1 was less than 2 and if 2 was less than 3. We could have written this using an and statement in Python:
+
+In [2]:
+1<2 and 2<3
+Out[2]:
+True
