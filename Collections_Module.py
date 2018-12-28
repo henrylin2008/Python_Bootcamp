@@ -55,3 +55,40 @@ c.items()                       # convert to a list of (elem, cnt) pairs
 Counter(dict(list_of_pairs))    # convert from a list of (elem, cnt) pairs
 c.most_common()[:-n-1:-1]       # n least common elements
 c += Counter()                  # remove zero and negative counts
+
+
+defaultdict
+defaultdict is a dictionary like object which provides all methods provided by dictionary but takes first argument (default_factory) as default data type for the dictionary. Using defaultdict is faster than doing the same using dict.set_default method.
+
+A defaultdict will never raise a KeyError. Any key that does not exist gets the value returned by the default factory.
+
+In [12]:
+from collections import defaultdict
+In [14]:
+d = {}
+In [22]:
+d['one']
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+<ipython-input-22-07706fc5dc20> in <module>()
+----> 1 d['one']
+
+KeyError: 'one'
+In [23]:
+d  = defaultdict(object)
+In [24]:
+d['one']
+Out[24]:
+<object at 0x1002c3a50>
+In [26]:
+for item in d:
+    print item
+one
+Can also initialize with default values:
+
+In [27]:
+d = defaultdict(lambda: 0)
+In [28]:
+d['one']
+Out[28]:
+0
