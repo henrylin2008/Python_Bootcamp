@@ -176,3 +176,45 @@ d2['a'] = 'A'
 print d1 == d2
 Dictionaries are equal? 
 False
+
+namedtuple
+The standard tuple uses numerical indexes to access its members, for example:
+
+In [38]:
+t = (12,13,14)
+In [39]:
+t[0]
+Out[39]:
+12
+For simple use cases, this is usually enough. On the other hand, remembering which index should be used for each value can lead to errors, especially if the tuple has a lot of fields and is constructed far from where it is used. A namedtuple assigns names, as well as the numerical index, to each member.
+
+Each kind of namedtuple is represented by its own class, created by using the namedtuple() factory function. The arguments are the name of the new class and a string containing the names of the elements.
+
+You can basically think of namedtuples as a very quick way of creating a new object/class type with some attribute fields. For example:
+
+In [40]:
+from collections import namedtuple
+In [47]:
+Dog = namedtuple('Dog','age breed name')
+
+sam = Dog(age=2,breed='Lab',name='Sammy')
+
+frank = Dog(age=2,breed='Shepard',name="Frankie")
+We construct the namedtuple by first passing the object type name (Dog) and then passing a string with the variety of fields as a string with spaces between the field names. We can then call on the various attributes:
+
+In [42]:
+sam
+Out[42]:
+Dog(age=2, breed='Lab', name='Sammy')
+In [43]:
+sam.age
+Out[43]:
+2
+In [44]:
+sam.breed
+Out[44]:
+'Lab'
+In [45]:
+sam[0]
+Out[45]:
+2
