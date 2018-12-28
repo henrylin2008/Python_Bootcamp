@@ -17,3 +17,11 @@ l = [1,2,2,2,2,3,3,3,1,2,1,12,3,2,32,1,21,1,223,1]
 Counter(l)
 Out[2]:
 Counter({1: 6, 2: 6, 3: 4, 32: 1, 12: 1, 21: 1, 223: 1})
+
+
+Counter with strings
+
+In [3]:
+Counter('aabsbsbsbhshhbbsbs')
+Out[3]:
+Counter({'b': 7, 's': 6, 'h': 3, 'a': 2})
