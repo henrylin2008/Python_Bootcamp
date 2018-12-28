@@ -36,3 +36,11 @@ In [5]:
 1==2 or 2<3
 Out[5]:
 True
+
+Note how it was true, this is because with the or operator, we only need one or the other two be true. Let's see one more example to drive this home:
+
+In [6]:
+1==1 or 100==1
+Out[6]:
+True
+Great! For an overview of this quick lesson: You should have a comfortable understanding of using and and or statements as well as reading chained comparison code.
