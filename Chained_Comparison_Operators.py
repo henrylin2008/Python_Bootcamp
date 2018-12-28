@@ -22,3 +22,10 @@ In [3]:
 1 < 3 > 2
 Out[3]:
 True
+
+The above checks if 3 is larger than both the other numbers, so you could use and to rewrite it as:
+
+In [4]:
+1<3 and 3>2
+Out[4]:
+True
