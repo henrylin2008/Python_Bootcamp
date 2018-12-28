@@ -15,3 +15,10 @@ In [2]:
 1<2 and 2<3
 Out[2]:
 True
+
+The and is used to make sure two checks have to be true in order for the total check to be true. Let's see another example:
+
+In [3]:
+1 < 3 > 2
+Out[3]:
+True
