@@ -15,3 +15,11 @@ In [4]:
 complex(10,1)
 Out[4]:
 (10+1j)
+
+
+We can also pass strings:
+
+In [6]:
+complex('12+2j')
+Out[6]:
+(12+2j)
