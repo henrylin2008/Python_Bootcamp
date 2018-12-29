@@ -17,3 +17,22 @@ In [4]:
 1 == 0
 Out[4]:
 False
+
+
+Not Equal
+In [5]:
+2 != 1
+Out[5]:
+True
+In [6]:
+2 != 2
+Out[6]:
+False
+In [7]:
+2 <> 1
+Out[7]:
+True
+In [8]:
+2 <> 2
+Out[8]:
+False
