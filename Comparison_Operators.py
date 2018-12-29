@@ -47,3 +47,13 @@ In [10]:
 2 > 4
 Out[10]:
 False
+
+Less Than
+In [11]:
+2 < 4
+Out[11]:
+True
+In [12]:
+2 < 1
+Out[12]:
+False
