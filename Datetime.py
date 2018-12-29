@@ -25,3 +25,14 @@ microsecond: 0
 tzinfo: None
 Note: A time instance only holds values of time, and not a date associated with the time.
 
+
+We can also check the min and max values a time of day can have in the module:
+
+In [5]:
+print 'Earliest  :', datetime.time.min
+print 'Latest    :', datetime.time.max
+print 'Resolution:', datetime.time.resolution
+Earliest  : 00:00:00
+Latest    : 23:59:59.999999
+Resolution: 0:00:00.000001
+The min and max class attributes reflect the valid range of times in a single day.
