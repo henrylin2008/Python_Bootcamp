@@ -36,3 +36,14 @@ In [8]:
 2 <> 2
 Out[8]:
 False
+
+
+Greater Than
+In [9]:
+2 > 1
+Out[9]:
+True
+In [10]:
+2 > 4
+Out[10]:
+False
