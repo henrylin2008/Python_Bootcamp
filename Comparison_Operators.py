@@ -67,3 +67,13 @@ In [14]:
 2 >= 1
 Out[14]:
 True
+
+Less than or Equal to
+In [15]:
+2 <= 2
+Out[15]:
+True
+In [16]:
+2 <= 4
+Out[16]:
+True
