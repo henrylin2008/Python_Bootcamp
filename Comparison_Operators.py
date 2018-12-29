@@ -57,3 +57,13 @@ In [12]:
 2 < 1
 Out[12]:
 False
+
+Greater Than or Equal to
+In [13]:
+2 >= 2
+Out[13]:
+True
+In [14]:
+2 >= 1
+Out[14]:
+True
