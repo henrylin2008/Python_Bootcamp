@@ -81,3 +81,21 @@ d2 = d1.replace(year=1990)
 print 'd2:', d2
 d1: 2015-03-11
 d2: 1990-03-11
+
+
+Arithmetic
+We can perform arithmetic on date objects to check for time differences. For example:
+
+In [9]:
+d1
+Out[9]:
+datetime.date(2015, 3, 11)
+In [10]:
+d2
+Out[10]:
+datetime.date(1990, 3, 11)
+In [11]:
+d1-d2
+Out[11]:
+datetime.timedelta(9131)
+This give us the difference in days between the two dates. You can use the timedelta method to specify various units of times (day,minutes,hours,etc...)
