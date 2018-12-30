@@ -30,3 +30,17 @@ Here we get back a dictionary of all the global variables, many of them are pred
 In [8]:
 print globals().keys()
 ['_dh', '__', '_i', 'quit', '__builtins__', 's', '_ih', '__builtin__', '_2', 'func', '__name__', '___', '_', '_sh', '_i8', '_i7', '_i6', '_i5', '_i4', '_i3', '_i2', '_i1', '__doc__', '_iii', 'exit', 'get_ipython', '_ii', 'In', '_oh', 'Out']
+
+
+
+Note how s is there, the Global Variable we defined as a string:
+
+In [10]:
+globals()['s']
+Out[10]:
+'Global Variable'
+Now lets run our function to check for any local variables in the func() (there shouldn't be any)
+
+In [11]:
+func()
+{}
