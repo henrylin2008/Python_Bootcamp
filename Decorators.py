@@ -120,3 +120,26 @@ NameError                                 Traceback (most recent call last)
 NameError: name 'welcome' is not defined
 Note how due to scope, the welcome() function is not defined outside of the hello() function. Now lets learn about returning functions from within functions:
 
+
+Returning Functions
+In [34]:
+def hello(name='Jose'):
+    
+    def greet():
+        return '\t This is inside the greet() function'
+    
+    def welcome():
+        return "\t This is inside the welcome() function"
+    
+    if name == 'Jose':
+        return greet
+    else:
+        return welcome
+In [39]:
+x = hello()
+Now lets see what function is returned if we set x = hello(), note how the closed parenthesis means that name ahs been defined as Jose.
+
+In [40]:
+x
+Out[40]:
+<function __main__.greet>
