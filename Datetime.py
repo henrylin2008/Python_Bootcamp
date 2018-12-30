@@ -59,3 +59,25 @@ ordinal: 735859
 Year: 2015
 Mon : 9
 Day : 18
+
+
+
+As with time, the range of date values supported can be determined using the min and max attributes.
+
+In [7]:
+print 'Earliest  :', datetime.date.min
+print 'Latest    :', datetime.date.max
+print 'Resolution:', datetime.date.resolution
+Earliest  : 0001-01-01
+Latest    : 9999-12-31
+Resolution: 1 day, 0:00:00
+Another way to create new date instances uses the replace() method of an existing date. For example, you can change the year, leaving the day and month alone.
+
+In [8]:
+d1 = datetime.date(2015, 3, 11)
+print 'd1:', d1
+
+d2 = d1.replace(year=1990)
+print 'd2:', d2
+d1: 2015-03-11
+d2: 1990-03-11
