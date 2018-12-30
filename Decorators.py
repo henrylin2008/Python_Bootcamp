@@ -84,3 +84,28 @@ In [19]:
 greet()
 Out[19]:
 'Hello Jose'
+
+
+
+Functions within functions
+Great! So we've seen how we can treat functions as objects, now lets see how we can define functions inside of other functions:
+
+In [26]:
+def hello(name='Jose'):
+    print 'The hello() function has been executed'
+    
+    def greet():
+        return '\t This is inside the greet() function'
+    
+    def welcome():
+        return "\t This is inside the welcome() function"
+    
+    print greet()
+    print welcome()
+    print "Now we are back inside the hello() function"
+In [27]:
+hello()
+The hello() function has been executed
+	 This is inside the greet() function
+	 This is inside the welcome() function
+Now we are back inside the hello() function
