@@ -44,3 +44,13 @@ Now lets run our function to check for any local variables in the func() (there 
 In [11]:
 func()
 {}
+
+Great! Now lets continue with building out the logic of what a decorator is. Remember that in Python everything is an object. That means functions are objects which can be assigned labels and passed into other functions. Lets start with some simple examples:
+
+In [12]:
+def hello(name='Jose'):
+    return 'Hello '+name
+In [13]:
+hello()
+Out[13]:
+'Hello Jose'
