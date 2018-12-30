@@ -109,3 +109,14 @@ The hello() function has been executed
 	 This is inside the greet() function
 	 This is inside the welcome() function
 Now we are back inside the hello() function
+
+In [29]:
+welcome()
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-29-efaf77b113fd> in <module>()
+----> 1 welcome()
+
+NameError: name 'welcome' is not defined
+Note how due to scope, the welcome() function is not defined outside of the hello() function. Now lets learn about returning functions from within functions:
+
