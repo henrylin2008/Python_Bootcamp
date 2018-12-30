@@ -36,3 +36,26 @@ Earliest  : 00:00:00
 Latest    : 23:59:59.999999
 Resolution: 0:00:00.000001
 The min and max class attributes reflect the valid range of times in a single day.
+
+
+Dates
+datetime (as you might suspect) also allows us to work with date timestamps. Calendar date values are represented with the date class. Instances have attributes for year, month, and day. It is easy to create a date representing today’s date using the today() class method.
+
+Lets see some examples:
+
+In [6]:
+today = datetime.date.today()
+print today
+print 'ctime:', today.ctime()
+print 'tuple:', today.timetuple()
+print 'ordinal:', today.toordinal()
+print 'Year:', today.year
+print 'Mon :', today.month
+print 'Day :', today.day
+2015-09-18
+ctime: Fri Sep 18 00:00:00 2015
+tuple: time.struct_time(tm_year=2015, tm_mon=9, tm_mday=18, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=4, tm_yday=261, tm_isdst=-1)
+ordinal: 735859
+Year: 2015
+Mon : 9
+Day : 18
