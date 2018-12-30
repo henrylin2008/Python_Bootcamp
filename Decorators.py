@@ -67,3 +67,20 @@ In [16]:
 greet()
 Out[16]:
 'Hello Jose'
+
+This assignment is not attached to the original function:
+
+In [17]:
+del hello
+In [18]:
+hello()
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-18-a803225a2f97> in <module>()
+----> 1 hello()
+
+NameError: name 'hello' is not defined
+In [19]:
+greet()
+Out[19]:
+'Hello Jose'
