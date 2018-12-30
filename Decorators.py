@@ -54,3 +54,16 @@ In [13]:
 hello()
 Out[13]:
 'Hello Jose'
+
+Assign a label to the function. Note that e are not using parentheses here because we are not calling the function hello, instead we are just putting it into the greet variable.
+
+In [14]:
+greet = hello
+In [15]:
+greet
+Out[15]:
+<function __main__.hello>
+In [16]:
+greet()
+Out[16]:
+'Hello Jose'
