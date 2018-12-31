@@ -58,3 +58,28 @@ In [16]:
 my_dict['key1']
 Out[16]:
 0
+
+A quick note, Python has a built-in method of doing a self subtraction or addition (or multiplication or division). We could have also used += or -= for the above statement. For example:
+
+In [17]:
+# Set the object equal to itself minus 123 
+my_dict['key1'] -= 123
+my_dict['key1']
+Out[17]:
+-123
+We can also create keys by assignment. For instance if we started off with an empty dictionary, we could continually add to it:
+
+In [21]:
+# Create a new dictionary
+d = {}
+In [22]:
+# Create a new key through assignment
+d['animal'] = 'Dog'
+In [24]:
+# Can do this with any object
+d['answer'] = 42
+In [25]:
+#Show
+d
+Out[25]:
+{'animal': 'Dog', 'answer': 42}
