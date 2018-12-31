@@ -143,3 +143,17 @@ In [40]:
 x
 Out[40]:
 <function __main__.greet>
+
+
+Great! Now we can see how x is pointing to the greet function inside of the hello function.
+
+In [42]:
+print x()
+	 This is inside the greet() function
+Lets take a quick look at the code again.
+
+In the if/else clause we are returning greet and welcome, not greet() and welcome().
+
+This is because when you put a pair of parentheses after it, the function gets executed; whereas if you don’t put parenthesis after it, then it can be passed around and can be assigned to other variables without executing it.
+
+When we write x = hello(), hello() gets executed and because the name is Jose by default, the function greet is returned. If we change the statement to x = hello(name = "Sam") then the welcome function will be returned. We can also do print hello()() which outputs now you are in the greet() function.
