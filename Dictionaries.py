@@ -83,3 +83,17 @@ In [25]:
 d
 Out[25]:
 {'animal': 'Dog', 'answer': 42}
+
+Nesting with Dictionaries
+Hopefully you're starting to see how powerful Python is with its flexibility of nesting objects and calling methods on them. Let's see a dictionary nested inside a dictionary:
+
+In [26]:
+# Dictionary nested inside a dictionary nested in side a dictionary
+d = {'key1':{'nestkey':{'subnestkey':'value'}}}
+Wow! That's a quite the inception of dictionaries! Let's see how we can grab that value:
+
+In [29]:
+# Keep calling the keys
+d['key1']['nestkey']['subnestkey']
+Out[29]:
+'value'
