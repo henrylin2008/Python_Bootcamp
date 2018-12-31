@@ -23,3 +23,23 @@ In [2]:
 my_dict['key2']
 Out[2]:
 'value2'
+
+Its important to note that dictionaries are very flexible in the data types they can hold. For example:
+
+In [13]:
+my_dict = {'key1':123,'key2':[12,23,33],'key3':['item0','item1','item2']}
+In [4]:
+#Lets call items from the dictionary
+my_dict['key3']
+Out[4]:
+['item0', 'item1', 'item2']
+In [5]:
+# Can call an index on that value
+my_dict['key3'][0]
+Out[5]:
+'item0'
+In [7]:
+#Can then even call methods on that value
+my_dict['key3'][0].upper()
+Out[7]:
+'ITEM0'
