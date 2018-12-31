@@ -175,3 +175,25 @@ Other code would go here
 Hi Jose!
 Great! Note how we can pass the functions as objects and then use them within other functions. Now we can get started with writing our first decorator:
 
+
+
+Creating a Decorator
+In the previous example we actually manually created a Decorator. Here we will modify it to make its use case clear:
+
+In [46]:
+def new_decorator(func):
+
+    def wrap_func():
+        print "Code would be here, before executing the func"
+
+        func()
+
+        print "Code here will execute after the func()"
+
+    return wrap_func
+
+def func_needs_decorator():
+    print "This function is in need of a Decorator"
+In [47]:
+func_needs_decorator()
+This function is in need of a Decorator
