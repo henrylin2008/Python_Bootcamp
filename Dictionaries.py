@@ -97,3 +97,26 @@ In [29]:
 d['key1']['nestkey']['subnestkey']
 Out[29]:
 'value'
+
+
+A few Dictionary Methods
+There are a few methods we can call on a dictionary. Let's get a quick introduction to a few of them:
+
+In [30]:
+# Create a typical dictionary
+d = {'key1':1,'key2':2,'key3':3}
+In [35]:
+# Method to return a list of all keys 
+d.keys()
+Out[35]:
+['key3', 'key2', 'key1']
+In [36]:
+# Method to grab all values
+d.values()
+Out[36]:
+[3, 2, 1]
+In [33]:
+# Method to return tuples of all items  (we'll learn about tuples soon)
+d.items()
+Out[33]:
+[('key3', 3), ('key2', 2), ('key1', 1)]
