@@ -197,3 +197,23 @@ def func_needs_decorator():
 In [47]:
 func_needs_decorator()
 This function is in need of a Decorator
+
+In [50]:
+# Reassign func_needs_decorator
+func_needs_decorator = new_decorator(func_needs_decorator)
+In [51]:
+func_needs_decorator()
+Code would be here, before executing the func
+This function is in need of a Decorator
+Code here will execute after the func()
+So what just happened here? A decorator simple wrapped the function and modified its behavior. Now lets understand how we can rewrite this code using the @ symbol, which is what Python uses for Decorators:
+
+In [52]:
+@new_decorator
+def func_needs_decorator():
+    print "This function is in need of a Decorator"
+In [53]:
+func_needs_decorator()
+Code would be here, before executing the func
+This function is in need of a Decorator
+Code here will execute after the func()
