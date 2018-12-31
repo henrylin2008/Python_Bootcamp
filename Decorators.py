@@ -157,3 +157,21 @@ In the if/else clause we are returning greet and welcome, not greet() and welcom
 This is because when you put a pair of parentheses after it, the function gets executed; whereas if you don’t put parenthesis after it, then it can be passed around and can be assigned to other variables without executing it.
 
 When we write x = hello(), hello() gets executed and because the name is Jose by default, the function greet is returned. If we change the statement to x = hello(name = "Sam") then the welcome function will be returned. We can also do print hello()() which outputs now you are in the greet() function.
+
+
+Functions as Arguments
+Now lets see how we can pass functions as arguments into other functions:
+
+In [43]:
+def hello():
+    return 'Hi Jose!'
+
+def other(func):
+    print 'Other code would go here'
+    print func()
+In [45]:
+other(hello)
+Other code would go here
+Hi Jose!
+Great! Note how we can pass the functions as objects and then use them within other functions. Now we can get started with writing our first decorator:
+
