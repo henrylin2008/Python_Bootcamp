@@ -43,3 +43,18 @@ In [7]:
 my_dict['key3'][0].upper()
 Out[7]:
 'ITEM0'
+
+We can effect the values of a key as well. For instance:
+
+In [14]:
+my_dict['key1']
+Out[14]:
+123
+In [15]:
+# Subtract 123 from the value
+my_dict['key1'] = my_dict['key1'] - 123
+In [16]:
+#Check
+my_dict['key1']
+Out[16]:
+0
