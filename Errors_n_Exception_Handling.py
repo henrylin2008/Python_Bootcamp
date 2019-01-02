@@ -220,3 +220,19 @@ try:
 except:
     print "An error occurred!"
 An error occurred!
+
+
+Problem 2
+Handle the exception thrown by the code below by using try and except blocks. Then use a finally block to print 'All Done.'
+
+In [4]:
+x = 5
+y = 0
+try:
+    z = x/y
+except ZeroDivisionError:
+    print "Can't divide by Zero!"
+finally:
+    print 'All Done!'
+Can't divide by Zero!
+All Done!
