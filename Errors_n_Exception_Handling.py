@@ -207,3 +207,16 @@ Please enter an integer: 4
 Yep thats an integer!
 Finally, I executed!
 Great! Now you know how to handle errors and exceptions in Python with the try, except, else, and finally notation!
+
+
+
+Problem 1
+Handle the exception thrown by the code below by using try and except blocks.
+
+In [1]:
+try:
+    for i in ['a','b','c']:
+        print i**2
+except:
+    print "An error occurred!"
+An error occurred!
