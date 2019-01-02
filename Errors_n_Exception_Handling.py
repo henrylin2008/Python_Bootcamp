@@ -12,3 +12,17 @@ This type of error and description is known as an Exception. Even if a statement
 
 You can check out the full list of built-in exceptions here. now lets learn how to handle errors and exceptions in our own code.
 
+
+try and except
+The basic terminology and syntax used to handle errors in Python is the try and except statements. The code which can cause an exception to occue is put in the try block and the handling of the exception is the implemented in the except block of code. The syntax form is:
+
+try:
+   You do your operations here...
+   ...
+except ExceptionI:
+   If there is ExceptionI, then execute this block.
+except ExceptionII:
+   If there is ExceptionII, then execute this block.
+   ...
+else:
+   If there is no exception then execute this block. 
