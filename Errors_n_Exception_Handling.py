@@ -70,3 +70,42 @@ else:
    f.close()
 Error: Could not find file or read data
 Great! Now we don't actually need to memorize that list of exception types! Now what if we kept wanting to run code after the exception occurred? This is where finally comes in.
+
+finally
+The finally: block of code will always be run regardless if there was an exception in the try code block. The syntax is:
+
+try:
+   Code block here
+   ...
+   Due to any exception, this code may be skipped!
+finally:
+   This code block would always be executed.
+
+For example:
+
+In [16]:
+try:
+   f = open("testfile", "w")
+   f.write("Test write statement")
+finally:
+   print "Always execute finally code blocks"
+Always execute finally code blocks
+finally
+The finally: block of code will always be run regardless if there was an exception in the try code block. The syntax is:
+
+try:
+   Code block here
+   ...
+   Due to any exception, this code may be skipped!
+finally:
+   This code block would always be executed.
+
+For example:
+
+In [16]:
+try:
+   f = open("testfile", "w")
+   f.write("Test write statement")
+finally:
+   print "Always execute finally code blocks"
+Always execute finally code blocks
