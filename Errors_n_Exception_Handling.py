@@ -144,3 +144,36 @@ UnboundLocalError                         Traceback (most recent call last)
 ----> 9         print val
 
 UnboundLocalError: local variable 'val' referenced before assignment
+
+Notice how we got an error when trying to print val (because it was never properly assigned) Lets remedy this by asking the user and checking to make sure the input type is an integer:
+
+In [39]:
+def askint():
+        try:
+            val = int(raw_input("Please enter an integer: "))
+        except:
+            print "Looks like you did not enter an integer!"
+            val = int(raw_input("Try again-Please enter an integer: "))
+        finally:
+            print "Finally, I executed!"
+        print val
+In [40]:
+askint()
+Please enter an integer: f
+Looks like you did not enter an integer!
+Try again-Please enter an integer: f
+Finally, I executed!
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-40-6ee53d339e7e> in <module>()
+----> 1 askint()
+
+<ipython-input-39-e540976abf48> in askint()
+      4         except:
+      5             print "Looks like you did not enter an integer!"
+----> 6             val = int(raw_input("Try again-Please enter an integer: "))
+      7         finally:
+      8             print "Finally, I executed!"
+
+ValueError: invalid literal for int() with base 10: 'f'
+Hmmm...that only did one check. How can we continually keep checking? We can use a while loop!
