@@ -177,3 +177,33 @@ ValueError                                Traceback (most recent call last)
 
 ValueError: invalid literal for int() with base 10: 'f'
 Hmmm...that only did one check. How can we continually keep checking? We can use a while loop!
+
+In [41]:
+def askint():
+    while True:
+        try:
+            val = int(raw_input("Please enter an integer: "))
+        except:
+            print "Looks like you did not enter an integer!"
+            continue
+        else:
+            print 'Yep thats an integer!'
+            break
+        finally:
+            print "Finally, I executed!"
+        print val
+In [42]:
+askint()
+Please enter an integer: five
+Looks like you did not enter an integer!
+Finally, I executed!
+Please enter an integer: five
+Looks like you did not enter an integer!
+Finally, I executed!
+Please enter an integer: four
+Looks like you did not enter an integer!
+Finally, I executed!
+Please enter an integer: 4
+Yep thats an integer!
+Finally, I executed!
+Great! Now you know how to handle errors and exceptions in Python with the try, except, else, and finally notation!
