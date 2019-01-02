@@ -53,3 +53,20 @@ else:
    print "Content written successfully"
    f.close()
 Error: Could not find file or read data
+
+Great! Notice how we only printed a statement! The code still ran and we were able to continue doing actions and running code blocks. This is extremely useful when you have to account for possible input errors in your code. You can be prepared for the error and keep running code, instead of your code just breaking as we saw above.
+
+We could have also just said except: if we weren't sure what exception would occur. For example:
+
+In [13]:
+try:
+    f = open('testfile','r')
+    f.write('Test write this')
+except:
+    # This will check for any exception and then execute this print statement
+   print "Error: Could not find file or read data"
+else:
+   print "Content written successfully"
+   f.close()
+Error: Could not find file or read data
+Great! Now we don't actually need to memorize that list of exception types! Now what if we kept wanting to run code after the exception occurred? This is where finally comes in.
