@@ -7,3 +7,27 @@ def enumerate(sequence, start=0):
     for elem in sequence:
         yield n, elem
         n += 1
+
+Example
+In [1]:
+lst = ['a','b','c']
+
+for number,item in enumerate(lst):
+    print number
+    print item
+0
+a
+1
+b
+2
+c
+enumerate() becomes particularly useful when you have a case where you need to have some sort of tracker. For example:
+
+In [3]:
+for count,item in enumerate(lst):
+    if count >= 2:
+        break
+    else:
+        print item
+a
+b
