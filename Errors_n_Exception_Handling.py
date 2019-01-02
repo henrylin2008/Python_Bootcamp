@@ -109,3 +109,38 @@ try:
 finally:
    print "Always execute finally code blocks"
 Always execute finally code blocks
+
+
+We can use this in conjunction with except. Lets see a new example that will take into account a user putting in the wrong input:
+
+In [33]:
+def askint():
+        try:
+            val = int(raw_input("Please enter an integer: "))
+        except:
+            print "Looks like you did not enter an integer!"
+            
+        finally:
+            print "Finally, I executed!"
+        print val
+In [35]:
+askint()
+Please enter an integer: 5
+Finally, I executed!
+5
+In [36]:
+askint()
+Please enter an integer: five
+Looks like you did not enter an integer!
+Finally, I executed!
+---------------------------------------------------------------------------
+UnboundLocalError                         Traceback (most recent call last)
+<ipython-input-36-6ee53d339e7e> in <module>()
+----> 1 askint()
+
+<ipython-input-33-728ec4c542c2> in askint()
+      7         finally:
+      8             print "Finally, I executed!"
+----> 9         print val
+
+UnboundLocalError: local variable 'val' referenced before assignment
