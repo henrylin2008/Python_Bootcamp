@@ -26,3 +26,30 @@ except ExceptionII:
    ...
 else:
    If there is no exception then execute this block. 
+
+We can also just check for any exception with just using except: To get a better understanding of all this lets check out an example: We will look at some code that opens and writes a file:
+
+In [11]:
+try:
+    f = open('testfile','w')
+    f.write('Test write this')
+except IOError:
+    # This will only check for an IOError exception and then execute this print statement
+   print "Error: Could not find file or read data"
+else:
+   print "Content written successfully"
+   f.close()
+Content written successfully
+Now lets see what would happen if we did not have write permission (opening only with 'r'):
+
+In [14]:
+try:
+    f = open('testfile','r')
+    f.write('Test write this')
+except IOError:
+    # This will only check for an IOError exception and then execute this print statement
+   print "Error: Could not find file or read data"
+else:
+   print "Content written successfully"
+   f.close()
+Error: Could not find file or read data
