@@ -8,3 +8,20 @@ In [6]:
 %%writefile test.txt
 Hello, this is a quick test file
 Overwriting test.txt
+
+Python Opening a file
+We can open a file with the open() function. The open function also takes in arguments (also called parameters). Lets see how this is used:
+
+In [14]:
+# Open the text.txt we made earlier
+my_file = open('test.txt')
+In [15]:
+# We can now read the file
+my_file.read()
+Out[15]:
+'Hello, this is a quick test file'
+In [16]:
+# But what happens if we try to read it again?
+my_file.read()
+Out[16]:
+''
