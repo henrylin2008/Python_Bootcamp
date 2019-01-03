@@ -77,3 +77,19 @@ for line in open('test.txt'):
 First Line
 
 Second Line
+
+on't worry about fully understanding this yet, for loops are coming up soon. But we'll break down what we did above. We said that for every line in this text file, go ahead and print that line. Its important to note a few things here:
+
+1.) We could have called the 'line' object anything (see example below).
+2.) By not calling .read() on the file, the whole text file was not stored in memory.
+3.) Notice the indent on the second line for print. This whitespace is required in Python.
+
+We'll learn a lot more about this later, but up next: Sets and Booleans!
+
+In [46]:
+# Pertaining to the first point above
+for asdf in open('test.txt'):
+    print asdf
+First Line
+
+Second Line
