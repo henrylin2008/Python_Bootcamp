@@ -59,3 +59,21 @@ In [43]:
 my_file.read()
 Out[43]:
 'This is a new line'
+
+
+Iterating through a File
+Lets get a quick preview of a for loop by iterating over a text file. First let's make a new text file with some iPython Magic:
+
+In [44]:
+%%writefile test.txt
+First Line
+Second Line
+Overwriting test.txt
+Now we can use a little bit of flow to tell the program to for through every line of the file and do something:
+
+In [45]:
+for line in open('test.txt'):
+    print line
+First Line
+
+Second Line
