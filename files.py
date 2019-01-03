@@ -43,3 +43,19 @@ In [26]:
 my_file.readlines()
 Out[26]:
 ['Hello, this is a quick test file']
+
+
+Writing to a File
+By default, using the open() function will only allow us to read the file, we need to pass the argument 'w' to write over the file. For example:
+
+In [39]:
+# Add a second argument to the function, 'w' which stands for write
+my_file = open('test.txt','w+')
+In [40]:
+# Write to the file
+my_file.write('This is a new line')
+In [43]:
+# Read the file
+my_file.read()
+Out[43]:
+'This is a new line'
