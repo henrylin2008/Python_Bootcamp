@@ -25,3 +25,21 @@ In [16]:
 my_file.read()
 Out[16]:
 ''
+
+This happens because you can imagine the reading "cursor" is at the end of the file after having read it. So there is nothing left to read. We can reset the "cursor" like this:
+
+In [42]:
+# Seek to the start of file (index 0)
+my_file.seek(0)
+In [19]:
+# Now read again
+my_file.read()
+Out[19]:
+'Hello, this is a quick test file'
+In order to not have to reset every time, we can also use the readlines method. Use caution with large files, since everything will be held in memory. We will learn how to iterate over large files later in the course.
+
+In [26]:
+# Readlines returns a list of the lines in the file.
+my_file.readlines()
+Out[26]:
+['Hello, this is a quick test file']
