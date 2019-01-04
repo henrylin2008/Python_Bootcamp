@@ -180,3 +180,19 @@ for (t1,t2) in l:
 6
 10
 Cool! With tuples in a sequence we can access the items inside of them through unpacking! The reason this is important is because many object will deliver their iterables through tuples. Let's start exploring iterating through Dictionaries to explore this further!
+
+
+
+Example 7
+In [1]:
+d = {'k1':1,'k2':2,'k3':3}
+In [2]:
+for item in d:
+    print item
+k3
+k2
+k1
+Notice how this produces only the keys. So how can we get the values? Or both the keys and the values?
+
+Here is where we are going to have a Python 3 Alert!
+
