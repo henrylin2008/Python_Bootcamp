@@ -119,3 +119,28 @@ for num in l:
 
 print list_sum
 55
+
+
+Example 4
+We've used for loops with lists, how about with strings? Remember strings are a sequence so when we iterate through them we will be accessing each item in that string.
+
+In [15]:
+for letter in 'This is a string.':
+    print letter
+T
+h
+i
+s
+ 
+i
+s
+ 
+a
+ 
+s
+t
+r
+i
+n
+g
+.
