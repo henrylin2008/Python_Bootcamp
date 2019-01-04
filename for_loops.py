@@ -196,3 +196,25 @@ Notice how this produces only the keys. So how can we get the values? Or both th
 
 Here is where we are going to have a Python 3 Alert!
 
+
+Python 2: Use .iteritems() to iterate through
+In Python 2 you should use .iteritems() to iterate through the keys and values of a dictionary. This basically creates a generator (we will get into generators later on in the course) that will generate the keys and values of your dictionary. Let's see it in action:
+
+In [9]:
+# Creates a generator
+d.iteritems()
+Out[9]:
+<dictionary-itemiterator at 0x104365520>
+Calling the items() method returns a list of tuples. Now we can iterate through them just as we did in the previous examples.
+
+In [10]:
+# Create a generator
+for k,v in d.iteritems():
+    print k
+    print v
+k3
+3
+k2
+2
+k1
+1
