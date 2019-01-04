@@ -20,3 +20,11 @@ lst =range(20)
 filter(even_check,lst)
 Out[3]:
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+
+filter() is more commonly used with lambda functions, this because we usually use filter for a quick job where we don't want to write an entire function. Lets repeat the example above using a lambda expression:
+
+In [5]:
+filter(lambda x: x%2==0,lst)
+Out[5]:
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
