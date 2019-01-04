@@ -33,3 +33,32 @@ for num in l:
 9
 10
 Great! Hopefully this makes sense. Now lets add a if statement to check for even numbers. We'll first introduce a new concept here--the modulo.
+
+
+Modulo
+The modulo allows us to get the remainder in a division and uses the % symbol. For example:
+
+In [5]:
+17 % 5
+Out[5]:
+2
+This makes sense since 17 divided by 5 is 3 remainder 2. Let's see a few more quick examples:
+
+In [6]:
+# 3 Remainder 1
+10 % 3
+Out[6]:
+1
+In [9]:
+# 2 Remainder 4
+18 % 7
+Out[9]:
+4
+In [10]:
+# 2 no remainder
+4 % 2
+Out[10]:
+0
+Notice that if a number is fully divisible with no remainder, the result of the modulo call is 0. We can use this to test for even numbers, since if a number modulo 2 is equal to 0, that means it is an even number!
+
+Back to the for loops!
