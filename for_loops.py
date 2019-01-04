@@ -76,3 +76,22 @@ for num in l:
 6
 8
 10
+
+We could have also put in else statement in there:
+
+In [12]:
+for num in l:
+    if num % 2 == 0:
+        print num
+    else:
+        print 'Odd number'
+Odd number
+2
+Odd number
+4
+Odd number
+6
+Odd number
+8
+Odd number
+10
