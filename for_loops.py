@@ -144,3 +144,17 @@ i
 n
 g
 .
+
+Example 5
+Let's now look at how a for loop can be used with a tuple:
+
+In [16]:
+tup = (1,2,3,4,5)
+
+for t in tup:
+    print t
+1
+2
+3
+4
+5
