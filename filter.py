@@ -11,3 +11,12 @@ def even_check(num):
     if num%2 ==0:
         return True
 
+
+Now let's filter a list of numbers. Note: putting the function into filter without any parenthesis might feel strange, but keep in mind that functions are objects as well.
+
+In [3]:
+lst =range(20)
+
+filter(even_check,lst)
+Out[3]:
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
