@@ -158,3 +158,25 @@ for t in tup:
 3
 4
 5
+
+
+
+Example 6
+Tuples have a special quality when it comes to for loops. If you are iterating through a sequence that contains tuples, the item can actually be the tuple itself, this is an example of tuple unpacking. During the for loop we will be unpacking the tuple inside of a sequence and we can access the individual items inside that tuple!
+
+In [17]:
+l = [(2,4),(6,8),(10,12)]
+In [18]:
+for tup in l:
+    print tup
+(2, 4)
+(6, 8)
+(10, 12)
+In [19]:
+# Now with unpacking!
+for (t1,t2) in l:
+    print t1
+2
+6
+10
+Cool! With tuples in a sequence we can access the items inside of them through unpacking! The reason this is important is because many object will deliver their iterables through tuples. Let's start exploring iterating through Dictionaries to explore this further!
