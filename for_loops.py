@@ -95,3 +95,27 @@ Odd number
 8
 Odd number
 10
+
+Example 3
+Another common idea during a for loop is keeping some sort of running tally during the multiple loops. For example, lets create a for loop that sums up the list:
+
+In [13]:
+# Start sum at zero
+list_sum = 0 
+
+for num in l:
+    list_sum = list_sum + num
+
+print list_sum
+55
+Great! Read over the above cell and make sure you understand fully what is going on. Also we could have implemented a += to to the addition towards the sum. For example:
+
+In [14]:
+# Start sum at zero
+list_sum = 0 
+
+for num in l:
+    list_sum += num
+
+print list_sum
+55
