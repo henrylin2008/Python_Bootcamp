@@ -62,3 +62,17 @@ Out[10]:
 Notice that if a number is fully divisible with no remainder, the result of the modulo call is 0. We can use this to test for even numbers, since if a number modulo 2 is equal to 0, that means it is an even number!
 
 Back to the for loops!
+
+
+Example 2
+Let's print only the even numbers from that list!
+
+In [11]:
+for num in l:
+    if num % 2 == 0:
+        print num
+2
+4
+6
+8
+10
