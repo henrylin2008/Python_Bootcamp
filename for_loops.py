@@ -218,3 +218,26 @@ k2
 2
 k1
 1
+
+
+Python 3: items()
+In Python 3 you should use .items() to iterate through the keys and values of a dictionary. For example:
+
+In [11]:
+# For Python 3
+for k,v in d.items():
+    print(k)
+    print(v)
+k3
+3
+k2
+2
+k1
+1
+You might be wondering why this worked in Python 2. This is because of the introduction of generators to Python during its earlier years. (We will go over generators and what they are in a future section, but the basic notion is that generators don't store data in memory, but instead just yield it to you as it goes through an iterable item).
+
+Originally, Python items() built a real list of tuples and returned that. That could potentially take a lot of extra memory.
+
+Then, generators were introduced to the language in general, and that method was reimplemented as an iterator-generator method named iteritems(). The original remains for backwards compatibility.
+
+One of Python 3’s changes is that items() now return iterators, and a list is never fully built. The iteritems() method is also gone, since items() now works like iteritems() in Python 2.
