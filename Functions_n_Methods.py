@@ -70,3 +70,18 @@ unique_list([1,1,1,1,2,2,3,3,3,3,4,5])
 Out[14]:
 [1, 2, 3, 4, 5]
 
+
+Write a Python function to multiply all the numbers in a list.
+
+Sample List : [1, 2, 3, -4]
+Expected Output : -24
+In [4]:
+def multiply(numbers):  
+    total = 1
+    for x in numbers:
+        total *= x  
+    return total
+In [7]:
+multiply([1,2,3,-4])
+Out[7]:
+-24
