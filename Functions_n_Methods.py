@@ -103,3 +103,27 @@ In [8]:
 palindrome('abcba')
 Out[8]:
 True
+
+Hard:
+
+Write a Python function to check whether a string is pangram or not.
+
+Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
+For example : "The quick brown fox jumps over the lazy dog"
+
+Hint: Look at the string module
+
+In [21]:
+import string
+
+def ispangram(str1, alphabet=string.ascii_lowercase):  
+    alphaset = set(alphabet)  
+    return alphaset <= set(str1.lower())
+In [22]:
+ispangram("The quick brown fox jumps over the lazy dog")
+Out[22]:
+True
+In [23]:
+string.ascii_lowercase
+Out[23]:
+'abcdefghijklmnopqrstuvwxyz'
