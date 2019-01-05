@@ -19,3 +19,13 @@ Call the function
 In [5]:
 say_hello()
 hello
+
+Example 2: A simple greeting function
+Let's write a function that greets people with their name.
+
+In [6]:
+def greeting(name):
+    print 'Hello %s' %name
+In [7]:
+greeting('Jose')
+Hello Jose
