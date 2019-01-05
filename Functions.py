@@ -29,3 +29,21 @@ def greeting(name):
 In [7]:
 greeting('Jose')
 Hello Jose
+
+Using return
+Let's see some example that use a return statement. return allows a function to return a result that can then be stored as a variable, or used in whatever manner a user wants.
+
+Example 3: Addition function
+In [8]:
+def add_num(num1,num2):
+    return num1+num2
+In [9]:
+add_num(4,5)
+Out[9]:
+9
+In [10]:
+# Can also save as variable due to return
+result = add_num(4,5)
+In [11]:
+print result
+9
