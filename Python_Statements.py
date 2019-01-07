@@ -22,3 +22,24 @@ Version 2 (Python)
 if a>b:
     a = 2
     b = 4
+
+You'll notice that Python is less cluttered and much more readable than the first version. How does Python manage this?
+
+Let's walk through the main differences:
+
+Python gets rid of () and {} by incorporating two main factors: a colon and whitespace. The statement is ended with a colon, and whitespace is used (indentation) to describe what takes place in case of the statement.
+
+Another major difference is the lack of semicolons in Python. Semicolons are used to denote statement endings in many other languages, but in Python, the end of a line is the same as the end of a statement.
+
+Lastly, to end this brief overview of differences, let's take a closer look at indentation syntax in Python vs other languages:
+
+Indentation
+Here is some pseudo-code to indicate the use of whitespace and indentation in Python:
+
+Other Languages
+
+if (x)
+    if(y)
+        code-statement;
+else
+    another-code-statement;
