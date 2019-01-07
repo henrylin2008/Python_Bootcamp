@@ -31,3 +31,29 @@ Great! Now since we have a generator function we don't have to keep track of eve
 Generators are best for calculating large sets of results (particularly in calculations that involve loops themselves) in cases where we don’t want to allocate the memory for all of the results at the same time.
 
 As we've noted in previous lectures (such as range()) many Standard Library functions that return lists in Python 2 have been modified to return generators in Python 3 because generators.
+
+Lets create another example generator which calculates fibonacci numbers:
+
+In [1]:
+def genfibon(n):
+    '''
+    Generate a fibonnaci sequence up to n
+    '''
+    a = 1
+    b = 1
+    for i in range(n):
+        yield a
+        a,b = b,a+b
+In [2]:
+for num in genfibon(10):
+    print num
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
