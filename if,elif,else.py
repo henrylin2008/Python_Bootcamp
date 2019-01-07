@@ -53,3 +53,26 @@ elif loc == 'Bank':
 else:
     print "Where are you?"
 Welcome to the bank!
+
+Note how the nested if statements are each checked until a True boolean causes the nested code below it to run. You should also note that you can put in as many elif statements as you want before you close off with an else.
+
+Let's create two more simple examples for the if,elif, and else statements:
+
+In [1]:
+person = 'Sammy'
+
+if person == 'Sammy':
+    print 'Welcome Sammy!'
+else:
+    print "Welcome, what's your name?"
+Welcome Sammy!
+In [2]:
+person = 'George'
+
+if person == 'Sammy':
+    print 'Welcome Sammy!'
+elif person =='George':
+    print "Welcome George!"
+else:
+    print "Welcome, what's your name?"
+Welcome George!
