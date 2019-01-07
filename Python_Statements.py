@@ -43,3 +43,15 @@ if (x)
         code-statement;
 else
     another-code-statement;
+
+
+Python
+
+if x:
+    if y:
+        code-statement
+else:
+    another-code-statement
+Note how Python is so heavily driven by code indentation and whitespace. This means that code readability is a core part of the design of the Python language.
+
+Now let's start diving deeper by coding these sort of statements in Python!
