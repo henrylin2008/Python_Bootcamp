@@ -16,3 +16,21 @@ elif case2:
     perform action2
 else: 
     perform action 3
+
+First Example
+Let's see a quick example of this:
+
+In [1]:
+if True:
+    print 'It was true!'
+It was true!
+Let's add in some else logic:
+
+In [5]:
+x = False
+
+if x:
+    print 'x was True!'
+else:
+    print 'I will be printed in any case where x is not true'
+I will be printed in any case where x is not true
