@@ -25,3 +25,27 @@ In [4]:
 square(2)
 Out[4]:
 4
+
+
+We can actually write this in one line (although it would be bad style to do so)
+
+In [5]:
+def square(num): return num**2
+In [6]:
+square(2)
+Out[6]:
+4
+This is the form a function that a lambda expression intends to replicate. A lambda expression can then be written as:
+
+In [7]:
+lambda num: num**2
+Out[7]:
+<function __main__.<lambda>>
+Note how we get a function back. We can assign this function to a label:
+
+In [8]:
+square = lambda num: num**2
+In [9]:
+square(2)
+Out[9]:
+4
