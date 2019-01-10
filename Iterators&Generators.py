@@ -57,3 +57,21 @@ for num in genfibon(10):
 21
 34
 55
+
+What is this was a normal function, what would it look like?
+
+In [3]:
+def fibon(n):
+    a = 1
+    b = 1
+    output = []
+    
+    for i in range(n):
+        output.append(a)
+        a,b = b,a+b
+        
+    return output
+In [4]:
+fibon(10)
+Out[4]:
+[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
