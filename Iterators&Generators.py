@@ -112,3 +112,26 @@ After yielding all the values next() caused a StopIteration error. What this err
 You might be wondering that why don’t we get this error while using a for loop? The for loop automatically catches this error and stops calling next.
 
 Lets go ahead and check out how to use iter(). You remember that strings are iterables:
+
+In [26]:
+s = 'hello'
+
+#Iterate over string
+for let in s:
+    print let
+h
+e
+l
+l
+o
+But that doesn't mean the string itself is an iterator! We can check this with the next() function:
+
+In [27]:
+next(s)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-27-bc0566bea448> in <module>()
+----> 1 next(s)
+
+TypeError: str object is not an iterator
+Interesting, this means that a string object supports iteration, but we can not directly iterate over it as we could with a generator function. The iter() function allows us to do just that!
