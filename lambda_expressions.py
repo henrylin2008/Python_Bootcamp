@@ -15,3 +15,13 @@ In [2]:
 square(2)
 Out[2]:
 4
+
+Continuing the breakdown:
+
+In [3]:
+def square(num):
+    return num**2
+In [4]:
+square(2)
+Out[4]:
+4
