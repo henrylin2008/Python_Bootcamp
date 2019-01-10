@@ -74,3 +74,14 @@ In [23]:
 first('hello')
 Out[23]:
 'h'
+
+
+Example 3
+Reverse a string:
+
+In [24]:
+rev = lambda s: s[::-1]
+In [25]:
+rev('hello')
+Out[25]:
+'olleh'
