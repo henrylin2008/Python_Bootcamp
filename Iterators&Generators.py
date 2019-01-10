@@ -135,3 +135,15 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: str object is not an iterator
 Interesting, this means that a string object supports iteration, but we can not directly iterate over it as we could with a generator function. The iter() function allows us to do just that!
+
+In [28]:
+s_iter = iter(s)
+In [29]:
+next(s_iter)
+Out[29]:
+'h'
+In [30]:
+next(s_iter)
+Out[30]:
+'e'
+Great! Now you know how to convert objects that are iterable into iterators themselves!
