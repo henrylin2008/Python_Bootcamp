@@ -63,3 +63,14 @@ In [15]:
 even(4)
 Out[15]:
 True
+
+
+Example 2
+Grab first character of a string:
+
+In [22]:
+first = lambda s: s[0]
+In [23]:
+first('hello')
+Out[23]:
+'h'
