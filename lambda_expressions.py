@@ -49,3 +49,17 @@ In [9]:
 square(2)
 Out[9]:
 4
+
+Example 1
+Check it a number is even
+
+In [13]:
+even = lambda x: x%2==0
+In [14]:
+even(3)
+Out[14]:
+False
+In [15]:
+even(4)
+Out[15]:
+True
