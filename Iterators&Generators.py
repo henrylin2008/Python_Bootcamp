@@ -75,3 +75,40 @@ In [4]:
 fibon(10)
 Out[4]:
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+Notice that if we call some huge value of n (like 100000) the second function will have to keep track of every single result, when in our case we actually only care about the previous result to generate the next one!
+
+next() and iter() built-in functions
+A key to fully understanding generators is the next function() and the iter() function.
+
+The next function allows us to access the next element in a sequence. Lets check it out:
+
+In [20]:
+def simple_gen():
+    for x in range(3):
+        yield x
+In [21]:
+# Assign simple_gen 
+g = simple_gen()
+In [22]:
+print next(g)
+0
+In [23]:
+print next(g)
+1
+In [24]:
+print next(g)
+2
+In [25]:
+print next(g)
+---------------------------------------------------------------------------
+StopIteration                             Traceback (most recent call last)
+<ipython-input-25-d013a5691c47> in <module>()
+----> 1 print next(g)
+
+StopIteration: 
+After yielding all the values next() caused a StopIteration error. What this error informs us of is that all the values have been yielded.
+
+You might be wondering that why don’t we get this error while using a for loop? The for loop automatically catches this error and stops calling next.
+
+Lets go ahead and check out how to use iter(). You remember that strings are iterables:
