@@ -85,3 +85,16 @@ In [25]:
 rev('hello')
 Out[25]:
 'olleh'
+
+
+Example 4
+Just like a normal function, we can accept more than one function into a lambda expression:
+
+In [17]:
+adder = lambda x,y : x+y
+In [19]:
+adder(2,3)
+Out[19]:
+5
+lambda expressions really shine when used in conjunction with map(),filter() and reduce(). Each of those functions has its own lecture, so feel free to explore them if you're very interested in lambda.
+
