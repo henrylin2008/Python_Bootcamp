@@ -37,3 +37,16 @@ In [6]:
 lst
 Out[6]:
 [0, 2, 4, 6, 8, 10]
+
+Example 4
+Can also do more complicated arithmetic:
+
+In [7]:
+# Convert Celsius to Fahrenheit
+celsius = [0,10,20.1,34.5]
+
+fahrenheit = [ ((float(9)/5)*temp + 32) for temp in Celsius ]
+
+fahrenheit
+Out[7]:
+[32.0, 50.0, 68.18, 94.1]
