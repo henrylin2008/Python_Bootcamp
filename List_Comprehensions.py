@@ -50,3 +50,14 @@ fahrenheit = [ ((float(9)/5)*temp + 32) for temp in Celsius ]
 fahrenheit
 Out[7]:
 [32.0, 50.0, 68.18, 94.1]
+
+
+Example 5
+We can also perform nested list comprehensions, for example:
+
+In [8]:
+lst = [ x**2 for x in [x**2 for x in range(11)]]
+lst
+Out[8]:
+[0, 1, 16, 81, 256, 625, 1296, 2401, 4096, 6561, 10000]
+Later on in the course we will learn about generator comprehensions. After this lecture you should feel comfortable reading and writing basic list comprehensions.
