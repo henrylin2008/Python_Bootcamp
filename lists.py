@@ -70,3 +70,28 @@ In [18]:
 my_list
 Out[18]:
 ['one', 'two', 'three', 4, 5, 'add new item permanently']
+
+We can also use the * for a duplication method similar to strings:
+
+In [20]:
+# Make the list double
+my_list * 2
+Out[20]:
+['one',
+ 'two',
+ 'three',
+ 4,
+ 5,
+ 'add new item permanently',
+ 'one',
+ 'two',
+ 'three',
+ 4,
+ 5,
+ 'add new item permanently']
+In [23]:
+# Again doubling not permanent
+my_list
+Out[23]:
+['one', 'two', 'three', 4, 5, 'add new item permanently']
+
