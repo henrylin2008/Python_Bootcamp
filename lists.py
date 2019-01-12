@@ -47,3 +47,26 @@ In [13]:
 my_list[:3]
 Out[13]:
 ['one', 'two', 'three']
+
+
+We can also use + to concatenate lists, just like we did for strings.
+
+In [14]:
+my_list + ['new item']
+Out[14]:
+['one', 'two', 'three', 4, 5, 'new item']
+Note: This doesn't actually change the original list!
+
+In [15]:
+my_list
+Out[15]:
+['one', 'two', 'three', 4, 5]
+You would have to reassign the list to make the change permanent.
+
+In [16]:
+# Reassign
+my_list = my_list + ['add new item permanently']
+In [18]:
+my_list
+Out[18]:
+['one', 'two', 'three', 4, 5, 'add new item permanently']
