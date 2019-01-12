@@ -13,3 +13,15 @@ lst
 Out[2]:
 ['w', 'o', 'r', 'd']
 This is the basic idea of a list comprehension. If you're familiar with mathematical notation this format should feel familiar for example: x^2 : x in { 0,1,2...10}
+
+
+Lets see a few more example of list comprehensions in Python:
+
+Example 2
+In [1]:
+# Square numbers in range and turn into list
+lst = [x**2 for x in range(0,11)]
+In [2]:
+lst
+Out[2]:
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
