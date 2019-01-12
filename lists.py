@@ -26,3 +26,24 @@ In [6]:
 len(my_list)
 Out[6]:
 4
+
+Indexing and Slicing
+Indexing and slicing works just like in strings. Let's make a new list to remind ourselves of how this works:
+
+In [7]:
+my_list = ['one','two','three',4,5]
+In [10]:
+# Grab element at index 0
+my_list[0]
+Out[10]:
+'one'
+In [11]:
+# Grab index 1 and everything past it
+my_list[1:]
+Out[11]:
+['two', 'three', 4, 5]
+In [13]:
+# Grab everything UP TO index 3
+my_list[:3]
+Out[13]:
+['one', 'two', 'three']
