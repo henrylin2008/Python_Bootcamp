@@ -158,3 +158,36 @@ In [52]:
 new_list
 Out[52]:
 ['a', 'e', 'x', 'b', 'c']
+
+In [53]:
+# Use reverse to reverse order (this is permanent!)
+new_list.reverse()
+In [54]:
+new_list
+Out[54]:
+['c', 'b', 'x', 'e', 'a']
+In [55]:
+# Use sort to sort the list (in this case alphabetical order, but for numbers it will go ascending)
+new_list.sort()
+In [56]:
+new_list
+Out[56]:
+['a', 'b', 'c', 'e', 'x']
+Nesting Lists
+A great feature of of Python data structures is that they support nesting. This means we can have data structures within data structures. For example: A list inside a list.
+
+Let's see how this works!
+
+In [57]:
+# Let's make three lists
+lst_1=[1,2,3]
+lst_2=[4,5,6]
+lst_3=[7,8,9]
+
+# Make a list of lists to form a matrix
+matrix = [lst_1,lst_2,lst_3]
+In [60]:
+# Show
+matrix
+Out[60]:
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
