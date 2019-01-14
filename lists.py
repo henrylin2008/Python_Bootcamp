@@ -126,3 +126,35 @@ In [46]:
 l
 Out[46]:
 [2, 3, 'append me!']
+
+n [47]:
+# Assign the popped element, remember default popped index is -1
+popped_item = l.pop()
+In [48]:
+popped_item
+Out[48]:
+'append me!'
+In [49]:
+# Show remaining list
+l
+Out[49]:
+[2, 3]
+It should also be noted that lists indexing will return an error if there is no element at that index. For example:
+
+In [50]:
+l[100]
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+<ipython-input-50-3e7ce3111e95> in <module>()
+----> 1 l[100]
+
+IndexError: list index out of range
+We can use the sort method and the reverse methods to also effect your lists:
+
+In [51]:
+new_list = ['a','e','x','b','c']
+In [52]:
+#Show
+new_list
+Out[52]:
+['a', 'e', 'x', 'b', 'c']
