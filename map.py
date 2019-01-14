@@ -41,3 +41,20 @@ map() can be applied to more than one iterable. The iterables have to have the s
 
 For instance, if we are working with two lists-map() will apply its lambda function to the elements of the argument lists, i.e. it first applies to the elements with the 0th index, then to the elements with the 1st index until the n-th index is reached.
 
+For example lets map a lambda expression to two lists:
+
+In [12]:
+a = [1,2,3,4]
+b = [5,6,7,8]
+c = [9,10,11,12]
+
+map(lambda x,y:x+y,a,b)
+Out[12]:
+[6, 8, 10, 12]
+In [13]:
+# Now all three lists
+map(lambda x,y,z:x+y+z, a,b,c)
+Out[13]:
+[15, 18, 21, 24]
+We can see in the example above that the parameter x gets its values from the list a, while y gets its values from b and z from list c. Go ahead and play with your own example to make sure you fully understand mapping to more than one iterable.
+
