@@ -191,3 +191,32 @@ In [60]:
 matrix
 Out[60]:
 [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+
+Now we can again use indexing to grab elements, but now there are two levels for the index. The items in the matrix object, and then the items inside that list!
+
+In [61]:
+# Grab first item in matrix object
+matrix[0]
+Out[61]:
+[1, 2, 3]
+In [62]:
+# Grab first item of the first item in the matrix object
+matrix[0][0]
+Out[62]:
+1
+List Comprehensions
+Python has an advanced feature called list comprehensions. They allow for quick construction of lists. To fully understand list comprehensions we need to understand for loops. So don't worry if you don't completely understand this section, and feel free to just skip it since we will return to this topic later.
+
+But in case you want to know now, here are a few examples!
+
+In [63]:
+# Build a list comprehension by deconstructing a for loop within a []
+first_col = [row[0] for row in matrix]
+In [64]:
+first_col
+Out[64]:
+[1, 4, 7]
+We used list comprehension here to grab the first element of every row in the matrix object. We will cover this in much more detail later on!
+
+`
