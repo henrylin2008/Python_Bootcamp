@@ -6,3 +6,30 @@ Methods will perform specific actions on the object and can also take arguments,
 Methods are in the form:
 
 object.method(arg1,arg2,etc...)
+
+
+Lets take a quick look at what an example of the various methods a list has:
+
+In [2]:
+# Create a simple list
+l = [1,2,3,4,5]
+Fortunately, with iPython and the Jupyter Notebook we can quickly see all the possible methods using the tab key. The methods for a list are:
+
+append
+count
+extend
+insert
+pop
+remove
+reverse
+sort
+Let's try out a few of them:
+
+append() allows us to add elements to the end of a list:
+
+In [3]:
+l.append(6)
+In [4]:
+l
+Out[4]:
+[1, 2, 3, 4, 5, 6]
