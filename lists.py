@@ -95,3 +95,34 @@ my_list
 Out[23]:
 ['one', 'two', 'three', 4, 5, 'add new item permanently']
 
+
+Basic List Methods
+If you are familiar with another programming language, you might start to draw parallels between arrays in another language and lists in Python. Lists in Python however, tend to be more flexible than arrays in other languages for a two good reasons: they have no fixed size (meaning we don't have to specify how big a list will be), and they have no fixed type constraint (like we've seen above).
+
+Let's go ahead and explore some more special methods for lists:
+
+In [42]:
+# Create a new list
+l = [1,2,3]
+Use the append method to permanently add an item to the end of a list:
+
+In [43]:
+# Append
+l.append('append me!')
+In [44]:
+# Show
+l
+Out[44]:
+[1, 2, 3, 'append me!']
+Use pop to "pop off" an item from the list. By default pop takes off the last index, but you can also specify which index to pop off. Let's see an example:
+
+In [45]:
+# Pop off the 0 indexed item
+l.pop(0)
+Out[45]:
+1
+In [46]:
+# Show
+l
+Out[46]:
+[2, 3, 'append me!']
