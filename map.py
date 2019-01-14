@@ -23,3 +23,21 @@ F_temps = map(fahrenheit, temp)
 F_temps
 Out[7]:
 [32.0, 72.5, 104.0, 212.0]
+
+In [8]:
+# Convert back
+map(celsius, F_temps)
+Out[8]:
+[0.0, 22.5, 40.0, 100.0]
+In the example above we haven't used a lambda expression. By using lambda, we wouldn't have had to define and name the functions fahrenheit() and celsius().
+
+In [10]:
+map(lambda x: (5.0/9)*(x - 32), F_temps)
+Out[10]:
+[0.0, 22.5, 40.0, 100.0]
+Great! We got the same result! Using map is much more commonly used with lambda expressions since the entire purpose of map() is to save effort on having to create manual for loops.
+
+map() can be applied to more than one iterable. The iterables have to have the same length.
+
+For instance, if we are working with two lists-map() will apply its lambda function to the elements of the argument lists, i.e. it first applies to the elements with the 0th index, then to the elements with the 1st index until the n-th index is reached.
+
