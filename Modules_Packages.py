@@ -29,3 +29,25 @@ Exploring built-in modules
 Two very important functions come in handy when exploring modules in Python - the dir and help functions.
 
 We can look for which functions are implemented in each module by using the dir function:
+
+
+
+Exploring built-in modules
+Two very important functions come in handy when exploring modules in Python - the dir and help functions.
+
+We can look for which functions are implemented in each module by using the dir function:
+
+In [8]:
+print(dir(math))
+['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+When we find the function in the module we want to use, we can read about it more using the help function, inside the Python interpreter:
+
+In [10]:
+help(math.ceil)
+Help on built-in function ceil in module math:
+
+ceil(...)
+    ceil(x)
+    
+    Return the ceiling of x as an int.
+    This is the smallest integral value >= x.
