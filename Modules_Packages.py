@@ -23,3 +23,9 @@ In [6]:
 math.ceil(2.4)
 Out[6]:
 3
+
+
+Exploring built-in modules
+Two very important functions come in handy when exploring modules in Python - the dir and help functions.
+
+We can look for which functions are implemented in each module by using the dir function:
