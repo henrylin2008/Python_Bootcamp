@@ -69,3 +69,19 @@ def greet():
 greet()
 Hello Sammy
 Note how Sammy was used, because the hello() function was enclosed inside of the greet function!
+
+
+
+Global
+Luckily in Jupyter a quick way to test for global variables is to see if another cell recognizes the variable!
+
+In [20]:
+print name
+This is a global name
+Built-in
+These are the built-in function names in Python (don't overwrite these!)
+
+In [22]:
+len
+Out[22]:
+<function len>
