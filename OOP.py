@@ -42,3 +42,32 @@ class
 The user defined objects are created using the class keyword. The class is a blueprint that defines a nature of a future object. From classes we can construct instances. An instance is a specific object created from a particular class. For example, above we created the object 'l' which was an instance of a list object.
 
 Let see how we can use class:
+
+In [2]:
+# Create a new object type called Sample
+class Sample(object):
+    pass
+
+# Instance of Sample
+x = Sample()
+
+print type(x)
+<class '__main__.Sample'>
+By convention we give classes a name that starts with a capital letter. Note how x is now the reference to our new instance of a Sample class. In other words, we instantiate the Sample class.
+
+Inside of the class we currently just have pass. But we can define class attributes and methods.
+
+An attribute is a characteristic of an object. A method is an operation we can perform with the object.
+
+For example we can create a class called Dog. An attribute of a dog may be its breed or its name, while a method of a dog may be defined by a .bark() method which returns a sound.
+
+Let's get a better understanding of attributes through an example.
+
+Attributes
+The syntax for creating an attribute is:
+
+self.attribute = something
+
+There is a special method called:
+
+__init__()
