@@ -24,3 +24,27 @@ Here is a table of the two main types we will spend most of our time working wit
 Examples	Number "Type"
 1,2,-5,1000	Integers
 1.2,-0.5,2e2,3E2	Floating-point numbers
+
+Now let's start with some basic arithmetic.
+
+Basic Arithmetic
+In [1]:
+# Addition
+2+1
+Out[1]:
+3
+In [2]:
+# Subtraction
+2-1
+Out[2]:
+1
+In [3]:
+# Multiplication
+2*2
+Out[3]:
+4
+In [4]:
+# Division
+3/2
+Out[4]:
+1
