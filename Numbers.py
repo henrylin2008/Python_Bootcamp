@@ -138,3 +138,26 @@ In [40]:
 a
 Out[40]:
 10
+
+
+Yes! Python allows you to write over assigned variable names. We can also use the variables themselves when doing the reassignment. Here is an example of what I mean:
+
+In [41]:
+# Check
+a
+Out[41]:
+10
+In [42]:
+# Use A to redefine A
+a = a + a
+In [43]:
+# Check 
+a
+Out[43]:
+20
+The names you use when creating these labels need to follow a few rules:
+
+1. Names can not start with a number.
+2. There can be no spaces in the name, use _ instead.
+3. Can't use any of these symbols :'",<>/?|\()!@#$%^&*~-+
+3. It's considered best practice (PEP8) that the names are lowercase.
