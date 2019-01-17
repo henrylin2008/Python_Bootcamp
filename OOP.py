@@ -242,3 +242,12 @@ book = Book("Python Rocks!", "Jose Portilla", 159)
 print book
 print len(book)
 del book
+
+A book is created
+Title:Python Rocks! , author:Jose Portilla, pages:159 
+159
+A book is destroyed
+The __init__(), __str__(), __len__() and the __del__() methods.
+These special methods are defined by their use of underscores. They allow us to use Python specific functions on objects created through our class.
+
+Great! After this lecture you should have a basic understanding of how to create your own objects with class in Python. You will be utilizing this heavily in your next milestone project!
