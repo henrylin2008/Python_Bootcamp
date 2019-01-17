@@ -140,3 +140,8 @@ Value of x (outside of func()) is:  2
 The global statement is used to declare that x is a global variable - hence, when we assign a value to x inside the function, that change is reflected when we use the value of x in the main block.
 
 You can specify more than one global variable using the same global statement e.g. global x, y, z.
+
+Conclusion
+You should now have a good understanding of Scope (you may have already intuitively felt right about Scope which is great!) One last mention is that you can use the globals() and locals() functions to check what are your current local and global variables.
+
+Another thing to keep in mind is that everything in Python is an object! I can assign variables to functions just like I can with numbers! We will go over this again in the decorator section of the course!
