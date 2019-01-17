@@ -109,3 +109,24 @@ The first time that we print the value of the name x with the first line in the 
 Next, we assign the value 2 to x. The name x is local to our function. So, when we change the value of x in the function, the x defined in the main block remains unaffected.
 
 With the last print statement, we display the value of x as defined in the main block, thereby confirming that it is actually unaffected by the local assignment within the previously called function.
+
+The global statement
+If you want to assign a value to a name defined at the top level of the program (i.e. not inside any kind of scope such as functions or classes), then you have to tell Python that the name is not local, but it is global. We do this using the global statement. It is impossible to assign a value to a variable defined outside a function without the global statement.
+
+You can use the values of such variables defined outside the function (assuming there is no variable with the same name within the function). However, this is not encouraged and should be avoided since it becomes unclear to the reader of the program as to where that variable’s definition is. Using the global statement makes it amply clear that the variable is defined in an outermost block.
+
+Example:
+
+In [12]:
+x = 50
+
+def func():
+    global x
+    print 'This function is now using the global x!'
+    print 'Because of global x is: ', x
+    x = 2
+    print 'Ran func(), changed global x to', x
+
+print 'Before calling func(), x is: ', x
+func()
+print 'Value of x (outside of func()) is: ', x
