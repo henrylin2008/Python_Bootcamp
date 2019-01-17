@@ -71,3 +71,33 @@ self.attribute = something
 There is a special method called:
 
 __init__()
+
+This method is used to initialize the attributes of an object. For example:
+
+In [3]:
+class Dog(object):
+    def __init__(self,breed):
+        self.breed = breed
+        
+sam = Dog(breed='Lab')
+frank = Dog(breed='Huskie')
+Lets break down what we have above.The special method
+
+__init__() 
+is called automatically right after the object has been created:
+
+def __init__(self, breed):
+Each attribute in a class definition begins with a reference to the instance object. It is by convention named self. The breed is the argument. The value is passed during the class instantiation.
+
+ self.breed = breed
+Now we have created two instances of the Dog class. With two breed types, we can then access these attributes like this:
+
+In [11]:
+sam.breed
+Out[11]:
+'Lab'
+In [9]:
+frank.breed
+Out[9]:
+'Huskie'
+Note how we don't have any parenthesis after breed, this is because it is an attribute and doesn't take any arguments.
