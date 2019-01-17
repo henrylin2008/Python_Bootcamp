@@ -48,3 +48,34 @@ In [4]:
 3/2
 Out[4]:
 1
+
+
+Whoa! What just happened? Last time I checked, 3 divided by 2 is equal 1.5 not 1!
+
+The reason we get this result is because we are using Python 2. In Python 2, the / symbol performs what is known as "classic" division, this means that the decimal points are truncated (cut off). In Python 3 however, a single / performs "true" division. So you would get 1.5 if you had inputed 3/2 in Python 3.
+
+So what do we do if we are using Python 2 to avoid this?
+
+There are two options:
+
+Specify one of the numbers to be a float:
+
+In [11]:
+# Specifying one of the numbers as a float
+3.0/2
+Out[11]:
+1.5
+In [12]:
+# Works for either number
+3/2.0
+Out[12]:
+1.5
+We could also "cast" the type using a function that basically turns integers into floats. This function, unsurprisingly, is called float().
+
+In [14]:
+# We can use this float() function to cast integers as floats:
+float(3)/2
+Out[14]:
+1.5
+We will go over functions in much more detail later on in this course, so don't worry if you are confused by the syntax here. Consider this a sneak preview.
+
