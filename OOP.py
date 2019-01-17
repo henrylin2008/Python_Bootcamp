@@ -101,3 +101,27 @@ frank.breed
 Out[9]:
 'Huskie'
 Note how we don't have any parenthesis after breed, this is because it is an attribute and doesn't take any arguments.
+
+In Python there are also class object attributes. These Class Object Attributes are the same for any instance of the class. For example, we could create the attribute species for the Dog class. Dogs (regardless of their breed,name, or other attributes will always be mammals. We apply this logic in the following manner:
+
+In [4]:
+class Dog(object):
+    
+    # Class Object Attribute
+    species = 'mammal'
+    
+    def __init__(self,breed,name):
+        self.breed = breed
+        self.name = name
+In [5]:
+sam = Dog('Lab','Sam')
+In [6]:
+sam.name
+Out[6]:
+'Sam'
+Note that the Class Object Attribute is defined outside of any methods in the class. Also by convention, we place them first before the init.
+
+In [7]:
+sam.species
+Out[7]:
+'mammal'
