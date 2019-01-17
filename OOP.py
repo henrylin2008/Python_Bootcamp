@@ -214,3 +214,31 @@ The derived class modifies existing behavior of the base class.
 shown by the whoAmI() method.
 Finally, the derived class extends the functionality of the base class, by defining a new bark() method.
 
+
+
+Special Methods
+Finally lets go over special methods. Classes in Python can implement certain operations with special method names. These methods are not actually called directly but by Python specific language syntax. For example Lets create a Book class:
+
+In [11]:
+class Book(object):
+    def __init__(self, title, author, pages):
+        print "A book is created"
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def __str__(self):
+        return "Title:%s , author:%s, pages:%s " %(self.title, self.author, self.pages)
+
+    def __len__(self):
+        return self.pages
+
+    def __del__(self):
+        print "A book is destroyed"
+In [12]:
+book = Book("Python Rocks!", "Jose Portilla", 159)
+
+#Special Methods
+print book
+print len(book)
+del book
