@@ -112,3 +112,29 @@ In [19]:
 (2+10) * (10+3)
 Out[19]:
 156
+
+Variable Assignments
+Now that we've seen how to use numbers in Python as a calculator let's see how we can assign names and create variables.
+
+We use a single equals sign to assign labels to variables. Let's see a few examples of how we can do this.
+
+In [37]:
+# Let's create an object called "a" and assign it the number 5
+a = 5
+Now if I call a in my Python script, Python will treat it as the number 5.
+
+In [38]:
+# Adding the objects
+a+a
+Out[38]:
+10
+What happens on reassignment? Will Python let us write it over?
+
+In [39]:
+# Reassignment
+a = 10
+In [40]:
+# Check
+a
+Out[40]:
+10
