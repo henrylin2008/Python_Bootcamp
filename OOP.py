@@ -21,3 +21,24 @@ In [3]:
 l.count(2)
 Out[3]:
 1
+
+What we will basically be doing in this lecture is exploring how we could create an Object type like a list. We've already learned about how to create functions. So lets explore Objects in general:
+
+Objects
+In Python, everything is an object. Remember from previous lectures we can use type() to check the type of object something is:
+
+In [4]:
+print type(1)
+print type([])
+print type(())
+print type({})
+<type 'int'>
+<type 'list'>
+<type 'tuple'>
+<type 'dict'>
+So we know all these things are objects, so how can we create our own Object types? That is where the class keyword comes in.
+
+class
+The user defined objects are created using the class keyword. The class is a blueprint that defines a nature of a future object. From classes we can construct instances. An instance is a specific object created from a particular class. For example, above we created the object 'l' which was an instance of a list object.
+
+Let see how we can use class:
