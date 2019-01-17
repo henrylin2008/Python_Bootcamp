@@ -79,3 +79,14 @@ Out[14]:
 1.5
 We will go over functions in much more detail later on in this course, so don't worry if you are confused by the syntax here. Consider this a sneak preview.
 
+
+One more "sneak preview" we can use to deal with classic division in Python 2 is importing from a module called future.
+
+This is a module in Python 2 that has Python 3 functions, this basically allows you to import Python 3 functions into Python 2. We will go over imports and modules later in the course, so don't worry about fully understanding the import statement right now!
+
+In [15]:
+from __future__ import division
+3/2
+Out[15]:
+1.5
+When you import division from the future you won't need to worry about classic division occurring anymore anywhere in your code!
