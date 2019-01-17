@@ -197,3 +197,20 @@ Dog created
 In [25]:
 d.whoAmI()
 Dog
+
+In [26]:
+d.eat()
+Eating
+In [27]:
+d.bark()
+Woof!
+In this example, we have two classes: Animal and Dog. The Animal is the base class, the Dog is the derived class.
+
+The derived class inherits the functionality of the base class.
+
+It is shown by the eat() method.
+The derived class modifies existing behavior of the base class.
+
+shown by the whoAmI() method.
+Finally, the derived class extends the functionality of the base class, by defining a new bark() method.
+
