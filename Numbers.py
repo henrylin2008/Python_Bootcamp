@@ -161,3 +161,21 @@ The names you use when creating these labels need to follow a few rules:
 2. There can be no spaces in the name, use _ instead.
 3. Can't use any of these symbols :'",<>/?|\()!@#$%^&*~-+
 3. It's considered best practice (PEP8) that the names are lowercase.
+
+Using variable names can be a very useful way to keep track of different variables in Python. For example:
+
+In [44]:
+# Use object names to keep better track of what's going on in your code!
+my_income = 100
+
+tax_rate = 0.1
+
+my_taxes = my_income*tax_rate
+In [46]:
+# Show my taxes!
+my_taxes
+Out[46]:
+10.0
+So what have we learned? We learned some of the basics of numbers in Python. We also learned how to do arithmetic and use Python as a basic calculator. We then wrapped it up with learning about Variable Assignment in Python.
+
+Up next we'll learn about Strings!
