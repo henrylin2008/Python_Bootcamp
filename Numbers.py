@@ -90,3 +90,25 @@ from __future__ import division
 Out[15]:
 1.5
 When you import division from the future you won't need to worry about classic division occurring anymore anywhere in your code!
+
+Arithmetic continued
+In [16]:
+# Powers
+2**3
+Out[16]:
+8
+In [17]:
+# Can also do roots this way
+4**0.5
+Out[17]:
+2.0
+In [18]:
+# Order of Operations followed in Python
+2 + 10 * 10 + 3
+Out[18]:
+105
+In [19]:
+# Can use parenthesis to specify orders
+(2+10) * (10+3)
+Out[19]:
+156
