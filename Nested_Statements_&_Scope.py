@@ -130,3 +130,13 @@ def func():
 print 'Before calling func(), x is: ', x
 func()
 print 'Value of x (outside of func()) is: ', x
+
+
+Before calling func(), x is:  50
+This function is now using the global x!
+Because of global x is:  50
+Ran func(), changed global x to 2
+Value of x (outside of func()) is:  2
+The global statement is used to declare that x is a global variable - hence, when we assign a value to x inside the function, that change is reflected when we use the value of x in the main block.
+
+You can specify more than one global variable using the same global statement e.g. global x, y, z.
