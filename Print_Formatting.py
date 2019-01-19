@@ -43,3 +43,10 @@ Here is a number: 123.1. Here is a string: hi
 In [24]:
 print 'Here is a number: %r. Here is a string: %r' %(123.1,'hi')
 Here is a number: 123.1. Here is a string: 'hi'
+
+Multiple Formatting
+Pass a tuple to the modulo symbol to place multiple formats in your print statements:
+
+In [22]:
+print 'First: %s, Second: %1.2f, Third: %r' %('hi!',3.14,22)
+First: hi!, Second: 3.14, Third: 22
