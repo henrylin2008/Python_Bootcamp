@@ -24,3 +24,22 @@ TypeError                                 Traceback (most recent call last)
       8 print result2
 
 TypeError: unsupported operand type(s) for +: 'int' and 'list'
+
+Hmmm, looks like we get an error! Lets implement a set_trace() using the pdb module. This will allow us to basically pause the code at the point of the trace and check if anything is wrong.
+
+In [4]:
+import pdb
+
+x = [1,3,4]
+y = 2
+z = 3
+
+result = y + z
+print result
+
+# Set a trace using Python Debugger
+pdb.set_trace()
+
+result2 = y+x
+print result2
+5
