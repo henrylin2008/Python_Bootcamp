@@ -33,3 +33,13 @@ Floating point numbers:      13.14
 In [19]:
 print 'Floating point numbers: %25.2f' %(13.144)
 Floating point numbers:                     13.14
+
+Conversion Format methods.
+It should be noted that two methods %s and %r actually convert any python object to a string using two separate methods: str() and repr(). We will learn more about these functions later on in the course, but you should note you can actually pass almost any Python object with these two methods and it will work:
+
+In [23]:
+print 'Here is a number: %s. Here is a string: %s' %(123.1,'hi')
+Here is a number: 123.1. Here is a string: hi
+In [24]:
+print 'Here is a number: %r. Here is a string: %r' %(123.1,'hi')
+Here is a number: 123.1. Here is a string: 'hi'
