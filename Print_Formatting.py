@@ -50,3 +50,23 @@ Pass a tuple to the modulo symbol to place multiple formats in your print statem
 In [22]:
 print 'First: %s, Second: %1.2f, Third: %r' %('hi!',3.14,22)
 First: hi!, Second: 3.14, Third: 22
+
+Using the string .format() method
+The best way to format objects into your strings for print statements is using the format method. The syntax is:
+
+'String here {var1} then also {var2}'.format(var1='something1',var2='something2')
+
+Lets see some examples:
+
+In [27]:
+print 'This is a string with an {p}'.format(p='insert')
+This is a string with an insert
+In [28]:
+# Multiple times:
+print 'One: {p}, Two: {p}, Three: {p}'.format(p='Hi!')
+One: Hi!, Two: Hi!, Three: Hi!
+In [29]:
+# Several Objects:
+print 'Object 1: {a}, Object 2: {b}, Object 3: {c}'.format(a=1,b='two',c=12.3)
+Object 1: 1, Object 2: two, Object 3: 12.3
+That is the basics of string formatting! Remember that Python 3 uses a print() function, not the print statement!
