@@ -38,3 +38,32 @@ Great thinking! This is a dilemma that can be solve with the use of a generator.
 This means a generator would not create a list to generate like range() does, but instead provide a one time generation of the numbers in that range. Python 2 has a built-in range generator called xrange(). It is recommended to use xrange() for for loops in Python 2.
 
 The good news is in Python 3, range() behaves as a generator and you don't need to worry about it. Let's see a quick example with xrange()
+
+In [9]:
+for num in range(10):
+    print num
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+In [10]:
+for num in xrange(10):
+    print num
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+So the main takeaway here is for Python 2, if you are using range() in a way that you don't need to save the results in a list, use xrange() instead. For Python 3, use range() in any instance.
+
