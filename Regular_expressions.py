@@ -268,3 +268,26 @@ test_patterns=[ r'\d+', # sequence of digits
                 ]
 
 multi_re_find(test_patterns,test_phrase)
+
+Searching the phrase using the re check: '\\d+'
+['1233']
+
+
+Searching the phrase using the re check: '\\D+'
+['This is a string with some numbers ', ' and a symbol #hashtag']
+
+
+Searching the phrase using the re check: '\\s+'
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+
+
+Searching the phrase using the re check: '\\S+'
+['This', 'is', 'a', 'string', 'with', 'some', 'numbers', '1233', 'and', 'a', 'symbol', '#hashtag']
+
+
+Searching the phrase using the re check: '\\w+'
+['This', 'is', 'a', 'string', 'with', 'some', 'numbers', '1233', 'and', 'a', 'symbol', 'hashtag']
+
+
+Searching the phrase using the re check: '\\W+'
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' #']
