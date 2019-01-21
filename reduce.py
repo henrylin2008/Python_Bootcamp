@@ -15,3 +15,11 @@ lst =[47,11,42,13]
 reduce(lambda x,y: x+y,lst)
 Out[16]:
 113
+
+
+Lets look at a diagram to get a better understanding of what is going on here:
+
+In [9]:
+from IPython.display import Image
+Image('http://www.python-course.eu/images/reduce_diagram.png')
+Out[9]:
