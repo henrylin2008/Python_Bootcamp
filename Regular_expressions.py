@@ -240,3 +240,14 @@ Searching the phrase using the re check: '[a-zA-Z]+'
 
 Searching the phrase using the re check: '[A-Z][a-z]+'
 ['This', 'Lets']
+
+Escape Codes
+You can use special escape codes to find specific types of patterns in your data, such as digits, non-digits,whitespace, and more. For example:
+
+Code	Meaning
+\d	a digit
+\D	a non-digit
+\s	whitespace (tab, space, newline, etc.)
+\S	non-whitespace
+\w	alphanumeric
+\W	non-alphanumeric
