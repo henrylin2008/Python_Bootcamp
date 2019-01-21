@@ -53,3 +53,17 @@ match = re.search(pattern,  text)
 type(match)
 Out[15]:
 _sre.SRE_Match
+
+
+This Match object returned by the search() method is more than just a Boolean or None, it contains information about the match, including the original input string, the regular expression that was used, and the location of the match. Let's see the methods we can use on the match object:
+
+In [21]:
+# Show start of match
+match.start()
+Out[21]:
+22
+In [23]:
+# Show end
+match.end()
+Out[23]:
+27
