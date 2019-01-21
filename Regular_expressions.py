@@ -209,3 +209,11 @@ Out[56]:
  'we',
  'remove',
  'it']
+
+ 
+Character Ranges
+As character sets grow larger, typing every character that should (or should not) match could become very tedious. A more compact format using character ranges lets you define a character set to include all of the contiguous characters between a start and stop point. The format used is [start-end].
+
+Common use cases are to search for a specific range of letters in the alphabet, such [a-f] would return matches with any instance of letters between a and f.
+
+Let's walk through some examples:
