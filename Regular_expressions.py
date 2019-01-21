@@ -251,3 +251,20 @@ Code	Meaning
 \S	non-whitespace
 \w	alphanumeric
 \W	non-alphanumeric
+
+Escapes are indicated by prefixing the character with a backslash (). Unfortunately, a backslash must itself be escaped in normal Python strings, and that results in expressions that are difficult to read. Using raw strings, created by prefixing the literal value with r, for creating regular expressions eliminates this problem and maintains readability.
+
+Personally, I think this use of r to escape a backslash is probably one of the things that block someone who is not familiar with regex in Python from being able to read regex code at first. Hopefully after seeing these examples this syntax will become clear.
+
+In [68]:
+test_phrase = 'This is a string with some numbers 1233 and a symbol #hashtag'
+
+test_patterns=[ r'\d+', # sequence of digits
+                r'\D+', # sequence of non-digits
+                r'\s+', # sequence of whitespace
+                r'\S+', # sequence of non-whitespace
+                r'\w+', # alphanumeric characters
+                r'\W+', # non-alphanumeric
+                ]
+
+multi_re_find(test_patterns,test_phrase)
