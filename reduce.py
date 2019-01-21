@@ -23,3 +23,14 @@ In [9]:
 from IPython.display import Image
 Image('http://www.python-course.eu/images/reduce_diagram.png')
 Out[9]:
+
+Note how we keep reducing the sequence until a single final value is obtained. Lets see another example:
+
+In [20]:
+#Find the maximum of a sequence (This already exists as max())
+max_find = lambda a,b: a if (a > b) else b
+In [21]:
+#Find max
+reduce(max_find,lst)
+Out[21]:
+47
