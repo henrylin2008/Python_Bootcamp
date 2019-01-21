@@ -190,3 +190,22 @@ We can use ^ to exclude terms by incorporating it into the bracket syntax notati
 
 In [ ]:
 test_phrase = 'This is a string! But it has punctuation. How can we remove it?'
+
+Use [^!.? ] to check for matches that are not a !,.,?, or space. Add the + to check that the match appears at least once, this basically translate into finding the words.
+
+In [56]:
+re.findall('[^!.? ]+',test_phrase)
+Out[56]:
+['This',
+ 'is',
+ 'a',
+ 'string',
+ 'But',
+ 'it',
+ 'has',
+ 'punctutation',
+ 'How',
+ 'can',
+ 'we',
+ 'remove',
+ 'it']
