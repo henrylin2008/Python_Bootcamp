@@ -233,3 +233,10 @@ Searching the phrase using the re check: '[a-z]+'
 
 Searching the phrase using the re check: '[A-Z]+'
 ['T', 'L']
+
+Searching the phrase using the re check: '[a-zA-Z]+'
+['This', 'is', 'an', 'example', 'sentence', 'Lets', 'see', 'if', 'we', 'can', 'find', 'some', 'letters']
+
+
+Searching the phrase using the re check: '[A-Z][a-z]+'
+['This', 'Lets']
