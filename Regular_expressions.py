@@ -210,10 +210,26 @@ Out[56]:
  'remove',
  'it']
 
- 
+
 Character Ranges
 As character sets grow larger, typing every character that should (or should not) match could become very tedious. A more compact format using character ranges lets you define a character set to include all of the contiguous characters between a start and stop point. The format used is [start-end].
 
 Common use cases are to search for a specific range of letters in the alphabet, such [a-f] would return matches with any instance of letters between a and f.
 
 Let's walk through some examples:
+
+In [65]:
+test_phrase = 'This is an example sentence. Lets see if we can find some letters.'
+
+test_patterns=[ '[a-z]+',      # sequences of lower case letters
+                '[A-Z]+',      # sequences of upper case letters
+                '[a-zA-Z]+',   # sequences of lower or upper case letters
+                '[A-Z][a-z]+'] # one upper case letter followed by lower case letters
+                
+multi_re_find(test_patterns,test_phrase)
+Searching the phrase using the re check: '[a-z]+'
+['his', 'is', 'an', 'example', 'sentence', 'ets', 'see', 'if', 'we', 'can', 'find', 'some', 'letters']
+
+
+Searching the phrase using the re check: '[A-Z]+'
+['T', 'L']
