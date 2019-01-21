@@ -183,3 +183,10 @@ Searching the phrase using the re check: 's[sd]+'
 
 
 It makes sense that the first [sd] returns every instance. Also the second input will just return any thing starting with an s in this particular case of the test phrase input.
+
+
+Exclusion
+We can use ^ to exclude terms by incorporating it into the bracket syntax notation. For example: [^...] will match any single character not in the brackets. Let's see some examples:
+
+In [ ]:
+test_phrase = 'This is a string! But it has punctuation. How can we remove it?'
