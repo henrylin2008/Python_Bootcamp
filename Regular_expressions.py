@@ -137,3 +137,23 @@ test_patterns = [ 'sd*',     # s followed by zero or more d's
                 ]
 
 multi_re_find(test_patterns,test_phrase)
+
+Searching the phrase using the re check: 'sd*'
+['sd', 'sd', 's', 's', 'sddd', 'sddd', 'sddd', 'sd', 's', 's', 's', 's', 's', 's', 'sdddd']
+
+
+Searching the phrase using the re check: 'sd+'
+['sd', 'sd', 'sddd', 'sddd', 'sddd', 'sd', 'sdddd']
+
+
+Searching the phrase using the re check: 'sd?'
+['sd', 'sd', 's', 's', 'sd', 'sd', 'sd', 'sd', 's', 's', 's', 's', 's', 's', 'sd']
+
+
+Searching the phrase using the re check: 'sd{3}'
+['sddd', 'sddd', 'sddd', 'sddd']
+
+
+Searching the phrase using the re check: 'sd{2,3}'
+['sddd', 'sddd', 'sddd', 'sddd']
+
