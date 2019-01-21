@@ -67,3 +67,20 @@ In [23]:
 match.end()
 Out[23]:
 27
+
+
+Split with regular expressions
+Let's see how we can split with the re syntax. This should look similar to how you used the split() method with strings.
+
+In [25]:
+# Term to split on
+split_term = '@'
+
+phrase = 'What is the domain name of someone with the email: hello@gmail.com'
+
+# Split the phrase
+re.split(split_term,phrase)
+Out[25]:
+['What is the domain name of someone with the email: hello', 'gmail.com']
+Note how re.split() returns a list with the term to spit on removed and the terms in the list are a split up version of the string. Create a couple of more examples for yourself to make sure you understand!
+
