@@ -84,3 +84,16 @@ Out[25]:
 ['What is the domain name of someone with the email: hello', 'gmail.com']
 Note how re.split() returns a list with the term to spit on removed and the terms in the list are a split up version of the string. Create a couple of more examples for yourself to make sure you understand!
 
+
+Note how re.split() returns a list with the term to spit on removed and the terms in the list are a split up version of the string. Create a couple of more examples for yourself to make sure you understand!
+
+Finding all instances of a pattern
+You can use re.findall() to find all the instances of a pattern in a string. For example:
+
+In [35]:
+# Returns a list of all matches
+re.findall('match','test phrase match is in middle')
+Out[35]:
+['match']
+In [ ]:
+
