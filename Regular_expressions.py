@@ -97,3 +97,20 @@ Out[35]:
 ['match']
 In [ ]:
 
+Pattern re Syntax
+This will be the bulk of this lecture on using re with Python. Regular expressions supports a huge variety of patterns the just simply finding where a single string occurred.
+
+We can use metacharacters along with re to find specific types of patterns.
+
+Since we will be testing multiple re syntax forms, let's create a function that will print out results given a list of various regular expressions and a phrase to parse:
+
+In [49]:
+def multi_re_find(patterns,phrase):
+    '''
+    Takes in a list of regex patterns
+    Prints a list of all matches
+    '''
+    for pattern in patterns:
+        print 'Searching the phrase using the re check: %r' %pattern
+        print re.findall(pattern,phrase)
+        print '\n'
