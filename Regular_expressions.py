@@ -157,3 +157,18 @@ Searching the phrase using the re check: 'sd{3}'
 Searching the phrase using the re check: 'sd{2,3}'
 ['sddd', 'sddd', 'sddd', 'sddd']
 
+
+
+Character Sets
+Character sets are used when you wish to match any one of a group of characters at a point in the input. Brackets are used to construct character set inputs. For example: the input [ab] searches for occurrences of either a or b. Let's see some examples:
+
+In [51]:
+test_phrase = 'sdsd..sssddd...sdddsddd...dsds...dsssss...sdddd'
+
+test_patterns = [ '[sd]',    # either s or d
+            's[sd]+']   # s followed by one or more s or d
+            
+
+multi_re_find(test_patterns,test_phrase)
+Searching the phrase using the re check: '[sd]'
+['s', 'd', 's', 'd', 's', 's', 's', 'd', 'd', 'd', 's', 'd', 'd', 'd', 's', 'd', 'd', 'd', 'd', 's', 'd', 's', 'd', 's', 's', 's', 's', 's', 's', 'd', 'd', 'd', 'd']
