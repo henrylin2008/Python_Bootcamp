@@ -172,3 +172,14 @@ test_patterns = [ '[sd]',    # either s or d
 multi_re_find(test_patterns,test_phrase)
 Searching the phrase using the re check: '[sd]'
 ['s', 'd', 's', 'd', 's', 's', 's', 'd', 'd', 'd', 's', 'd', 'd', 'd', 's', 'd', 'd', 'd', 'd', 's', 'd', 's', 'd', 's', 's', 's', 's', 's', 's', 'd', 'd', 'd', 'd']
+
+
+Searching the phrase using the re check: '[sd]'
+['s', 'd', 's', 'd', 's', 's', 's', 'd', 'd', 'd', 's', 'd', 'd', 'd', 's', 'd', 'd', 'd', 'd', 's', 'd', 's', 'd', 's', 's', 's', 's', 's', 's', 'd', 'd', 'd', 'd']
+
+
+Searching the phrase using the re check: 's[sd]+'
+['sdsd', 'sssddd', 'sdddsddd', 'sds', 'sssss', 'sdddd']
+
+
+It makes sense that the first [sd] returns every instance. Also the second input will just return any thing starting with an s in this particular case of the test phrase input.
