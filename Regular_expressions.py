@@ -291,3 +291,11 @@ Searching the phrase using the re check: '\\w+'
 
 Searching the phrase using the re check: '\\W+'
 [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' #']
+
+
+Conclusion
+You should now have a solid understanding of how to use the regular expression module in Python. There are a ton of more special character instances, but it would be unreasonable to go through every single use case. Instead take a look at the full documentation if you ever need to look up a particular case.
+
+You can also check out the nice summary tables at this source.
+
+Good job!
