@@ -28,3 +28,28 @@ for pattern in patterns:
     else:
         print '\n'
         print 'No Match was found.\n'
+
+Searching for "term1" in: 
+"This is a string with term1, but it does not have the other term." 
+
+Match was found. 
+
+Searching for "term2" in: 
+"This is a string with term1, but it does not have the other term." 
+
+No Match was found.
+
+Now we've seen that re.search() will take the pattern, scan the text, and then returns a Match object. If no pattern is found, a None is returned. To give a clearer picture of this match object, check out the cell below:
+
+In [15]:
+# List of patterns to search for
+pattern = 'term1'
+
+# Text to parse
+text = 'This is a string with term1, but it does not have the other term.'
+
+match = re.search(pattern,  text)
+
+type(match)
+Out[15]:
+_sre.SRE_Match
