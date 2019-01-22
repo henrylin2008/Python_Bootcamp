@@ -14,3 +14,16 @@ In [4]:
 x
 Out[4]:
 {1}
+
+Note the curly brackets. This does not indicate a dictionary! Although you can draw analogies as a set being a dictionary with only keys.
+
+We know that a set has only unique entries. So what happens when we try to add something that is already in a set?
+
+In [5]:
+# Add a different element
+x.add(2)
+In [6]:
+#Show
+x
+Out[6]:
+{1, 2}
