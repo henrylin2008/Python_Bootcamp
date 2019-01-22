@@ -49,3 +49,10 @@ In [12]:
 set(l)
 Out[12]:
 {1, 2, 3, 4, 5, 6}
+
+Booleans
+Python comes with Booleans (with predefined True and False displays that are basically just the integers 1 and 0). It also has a placeholder object called None. Let's walk through a few quick examples of Booleans (we will dive deeper into them later in this course).
+
+In [13]:
+# Set object to be a boolean
+a = True
