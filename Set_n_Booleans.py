@@ -27,3 +27,12 @@ In [6]:
 x
 Out[6]:
 {1, 2}
+
+In [7]:
+# Try to add the same element
+x.add(1)
+In [9]:
+#Show
+x
+Out[9]:
+{1, 2}
