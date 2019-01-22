@@ -71,3 +71,11 @@ In [17]:
 1 > 2
 Out[17]:
 False
+
+
+We can use None as a placeholder for an object that we don't want to reassign yet:
+
+In [18]:
+# None placeholder
+b = None
+Thats it! You should now have a basic understanding of Python objects and data structure types. Next, go ahead and do the assessment test!
