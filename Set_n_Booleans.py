@@ -43,3 +43,9 @@ Notice how it won't place another 1 there. That's because a set is only concerne
 In [10]:
 # Create a list with repeats
 l = [1,1,2,2,3,4,5,6,1,1]
+
+In [12]:
+# Cast as set to get unique values
+set(l)
+Out[12]:
+{1, 2, 3, 4, 5, 6}
