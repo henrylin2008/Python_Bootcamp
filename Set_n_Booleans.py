@@ -56,3 +56,9 @@ Python comes with Booleans (with predefined True and False displays that are bas
 In [13]:
 # Set object to be a boolean
 a = True
+
+n [16]:
+#Show
+a
+Out[16]:
+True
