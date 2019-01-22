@@ -62,3 +62,12 @@ n [16]:
 a
 Out[16]:
 True
+
+
+We can also use comparison operators to create booleans. We will go over all the comparison operators later on in the course.
+
+In [17]:
+# Output is boolean
+1 > 2
+Out[17]:
+False
