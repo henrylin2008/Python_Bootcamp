@@ -36,3 +36,10 @@ In [9]:
 x
 Out[9]:
 {1, 2}
+
+
+Notice how it won't place another 1 there. That's because a set is only concerned with unique elements! We can cast a list with multiple repeat elements to a set to get the unique elements. For example:
+
+In [10]:
+# Create a list with repeats
+l = [1,1,2,2,3,4,5,6,1,1]
