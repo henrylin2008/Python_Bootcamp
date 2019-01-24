@@ -58,3 +58,12 @@ for num in xrange(1,101):
         print "Buzz"
     else:
         print num
+
+Use List Comprehension to create a list of the first letters of every word in the string below:
+
+In [6]:
+st = 'Create a list of the first letters of every word in this string'
+In [7]:
+[word[0] for word in st.split()]
+Out[7]:
+['C', 'a', 'l', 'o', 't', 'f', 'l', 'o', 'e', 'w', 'i', 't', 's']
