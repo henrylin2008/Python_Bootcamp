@@ -4,3 +4,7 @@ The best way to show this is by example:
 
 In [1]:
 import StringIO
+
+In [16]:
+# Arbitrary String
+message = 'This is just a normal string.'
