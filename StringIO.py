@@ -12,3 +12,10 @@ message = 'This is just a normal string.'
 In [25]:
 # Use StringIO method to set as file object
 f = StringIO.StringIO(message)
+
+Now we have an object f that we will be able to treat just like a file. For example:
+
+In [30]:
+f.read()
+Out[30]:
+''
