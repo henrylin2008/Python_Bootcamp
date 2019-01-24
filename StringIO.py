@@ -28,3 +28,7 @@ f.write(' Second line written to file like object')
 In [28]:
 # Reset cursor just like you would a file
 f.seek(0)
+
+In [29]:
+# Read again
+f.read()
