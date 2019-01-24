@@ -8,3 +8,7 @@ import StringIO
 In [16]:
 # Arbitrary String
 message = 'This is just a normal string.'
+
+In [25]:
+# Use StringIO method to set as file object
+f = StringIO.StringIO(message)
