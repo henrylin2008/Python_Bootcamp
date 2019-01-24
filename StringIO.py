@@ -38,3 +38,4 @@ Out[29]:
 Great! Now you've seen how we can use StringIO to turn normal strings into in-memory file objects in our code. This kind of action has various use cases, especially in web scraping cases where you want to read some string you scraped as a file.
 
 For more info on StringIO check out the documentation:https://docs.python.org/2/library/stringio.html
+change 2
