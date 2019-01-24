@@ -32,3 +32,6 @@ f.seek(0)
 In [29]:
 # Read again
 f.read()
+
+Out[29]:
+'This is just a normal string. Second line written to file like object'
