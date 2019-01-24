@@ -19,3 +19,8 @@ In [30]:
 f.read()
 Out[30]:
 ''
+
+We can also write to it:
+
+In [27]:
+f.write(' Second line written to file like object')
