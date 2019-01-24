@@ -24,3 +24,7 @@ We can also write to it:
 
 In [27]:
 f.write(' Second line written to file like object')
+
+In [28]:
+# Reset cursor just like you would a file
+f.seek(0)
