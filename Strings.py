@@ -23,3 +23,14 @@ In [1]:
 'hello'
 Out[1]:
 'hello
+
+In [2]:
+# Entire phrase 
+'This is also a string'
+Out[2]:
+'This is also a string'
+In [3]:
+# We can also use double quote
+"String built with double quotes"
+Out[3]:
+'String built with double quotes'
