@@ -14,3 +14,12 @@ In this lecture we'll learn about the following:
 5.) String Properties
 6.) String Methods
 7.) Print Formatting
+
+Creating a String
+To create a string in Python you need to use either single quotes or double quotes. For example:
+
+In [1]:
+# Single word
+'hello'
+Out[1]:
+'hello
