@@ -49,3 +49,20 @@ In [10]:
 Out[10]:
 "Now I'm ready to use the single quotes inside a string!"
 Now let's learn about printing strings!
+
+
+
+Printing a String
+Using Jupyter notebook with just a string in a cell will automatically output strings, but the correct way to display strings in your output is by using a print function.
+
+In [11]:
+# We can simply declare a string
+'Hello World'
+Out[11]:
+'Hello World'
+In [12]:
+# note that we can't output multiple strings this way
+'Hello World 1'
+'Hello World 2'
+Out[12]:
+'Hello World 2'
