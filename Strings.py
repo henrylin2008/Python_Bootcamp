@@ -103,3 +103,17 @@ In [33]:
 len('Hello World')
 Out[33]:
 11
+
+String Indexing
+We know strings are a sequence, which means Python can use indexes to call parts of the sequence. Let's learn how this works.
+
+In Python, we use brackets [] after an object to call its index. We should also note that indexing starts at 0 for Python. Let's create a new object called s and the walk through a few examples of indexing.
+
+In [1]:
+# Assign s as a string
+s = 'Hello World'
+In [35]:
+#Check
+s
+Out[35]:
+'Hello World'
