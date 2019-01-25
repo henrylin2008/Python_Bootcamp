@@ -82,3 +82,16 @@ Use
 
 
 See what I mean?
+
+Something to note. In Python 3, print is a function, not a statement. So you would print statements like this: print('Hello World')
+
+If you want to use this functionality in Python2, you can import form the future module.
+
+A word of caution, after importing this you won't be able to choose the print statement method anymore. So pick whichever one you prefer depending on your Python installation and continue on with it.
+
+In [32]:
+# To use print function from Python 3 in Python 2
+from __future__ import print_function
+
+print('Hello World')
+Hello World
