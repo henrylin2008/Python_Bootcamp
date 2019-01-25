@@ -137,3 +137,10 @@ In [23]:
 s[2]
 Out[23]:
 'l'
+We can use a : to perform slicing which grabs everything up to a designated point. For example:
+
+In [24]:
+# Grab everything past the first term all the way to the length of s which is len(s)
+s[1:]
+Out[24]:
+'ello World'
