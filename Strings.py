@@ -66,3 +66,19 @@ In [12]:
 'Hello World 2'
 Out[12]:
 'Hello World 2'
+
+We can use a print statement to print a string.
+
+In [13]:
+print 'Hello World 1'
+print 'Hello World 2'
+print 'Use \n to print a new line'
+print '\n'
+print 'See what I mean?'
+Hello World 1
+Hello World 2
+Use 
+ to print a new line
+
+
+See what I mean?
