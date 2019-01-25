@@ -34,3 +34,18 @@ In [3]:
 "String built with double quotes"
 Out[3]:
 'String built with double quotes'
+
+In [4]:
+# Be careful with quotes!
+' I'm using single quotes, but will create an error'
+  File "<ipython-input-4-6565b0b7b5e3>", line 2
+    ' I'm using single quotes, but will create an error'
+        ^
+SyntaxError: invalid syntax
+The reason for the error above is because the single quote in I'm stopped the string. You can use combinations of double and single quotes to get the complete statement.
+
+In [10]:
+"Now I'm ready to use the single quotes inside a string!"
+Out[10]:
+"Now I'm ready to use the single quotes inside a string!"
+Now let's learn about printing strings!
