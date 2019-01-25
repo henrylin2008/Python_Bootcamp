@@ -144,3 +144,14 @@ In [24]:
 s[1:]
 Out[24]:
 'ello World'
+
+In [25]:
+# Note that there is no change to the original s
+s
+Out[25]:
+'Hello World'
+In [26]:
+# Grab everything UP TO the 3rd index
+s[:3]
+Out[26]:
+'Hel'
