@@ -117,3 +117,23 @@ In [35]:
 s
 Out[35]:
 'Hello World'
+
+In [36]:
+# Print the object
+print(s)
+Hello World
+Let's start indexing!
+
+In [21]:
+# Show first element (in this case a letter)
+s[0]
+Out[21]:
+'H'
+In [22]:
+s[1]
+Out[22]:
+'e'
+In [23]:
+s[2]
+Out[23]:
+'l'
