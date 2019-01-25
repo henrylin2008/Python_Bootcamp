@@ -95,3 +95,11 @@ from __future__ import print_function
 
 print('Hello World')
 Hello World
+
+String Basics
+We can also use a function called len() to check the length of a string!
+
+In [33]:
+len('Hello World')
+Out[33]:
+11
